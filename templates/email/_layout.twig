@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="x-apple-disable-message-reformatting">
+        <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<![endif]-->
+        <title></title>
+        <!--[if mso]>
+        <style type="text/css">
+            table {border-collapse:collapse;border:0;border-spacing:0;margin:0;}
+            div, td {padding:0;}
+            div {margin:0 !important;}
+        </style>
+        <noscript>
+            <xml>
+                <o:OfficeDocumentSettings>
+                    <o:PixelsPerInch>96</o:PixelsPerInch>
+                </o:OfficeDocumentSettings>
+            </xml>
+        </noscript>
+        <![endif]-->
+        <style>
+            {{ bsi_cx_css_inline() }}
+        </style>
+    </head>
+    <body style="margin: 0; padding: 0; word-spacing: normal;">
+        <table role="presentation" style="width: 100%; border: 0; border-spacing: 0; background-color: #ffffff;">
+            <tr>
+                <td align="center">
+                    <!--[if mso]>
+                    <table role="presentation" align="center" style="width: 660px;">
+                    <tr>
+                    <td style="padding: 10px 0;">
+                    <![endif]-->
+                    <div class="bsi-header" style="width: 96%; max-width: 660px; margin: 10px auto;">
+                        <table role="presentation" style="width: 100%; border: 0; border-spacing: 0;">
+                            <tr>
+                                <td align="center" style="text-align: center;" data-bsi-dropzone="preheader-dz-fWSCej" data-bsi-dropzone-allowed-elements="header-preheader-cVwk8f logo-TlgUGB" data-bsi-dropzone-max-number-of-elements="2">
+                                    {% block preheader %}
+                                        {% include '@bsi-cx/design-standard-library-email/content-elements/base/header-preheader/template.twig' %}
+                                    {% endblock %}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table style="width: 100%; border: 0; border-spacing: 0; margin-bottom: {{ properties.baseMarginBottom }}px;">
+                                        <tr>
+                                            <td align="left" style="text-align: left;" data-bsi-dropzone="header-left-dz-4v3EEz" data-bsi-dropzone-allowed-elements="logo-TlgUGB text-Or4N33 cta-eoRgSU" data-bsi-dropzone-max-number-of-elements="1">
+                                                {% block headerLeft %}
+                                                    {% include './content-elements/logo/template.twig' %}
+                                                {% endblock %}
+                                            </td>
+                                            <td align="right" style="text-align: right;" data-bsi-dropzone="header-right-dz-BnqL9s" data-bsi-dropzone-allowed-elements="text-Or4N33 cta-right-iVLOnT logo-TlgUGB" data-bsi-dropzone-max-number-of-elements="1">
+                                                {% block headerRight %}
+                                                    {% include './content-elements/cta-right/template.twig' %}
+                                                {% endblock %}
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!--[if mso]>
+                            <tr>
+                            <td height="{{ properties.baseMarginBottom }}" style="height: {{ properties.baseMarginBottom }}px;">&nbsp;</td>
+                            </tr>
+                            <![endif]-->
+                            <tr>
+                                <td align="center" data-bsi-dropzone="header-img-dz-QT6wSZ" data-bsi-dropzone-allowed-elements="header-img-GTzJdB divider-LQi2yS" data-bsi-dropzone-max-number-of-elements="1">
+                                    {% block headerImage %}
+                                        {% include './content-elements/header-img/template.twig' %}
+                                    {% endblock %}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--[if mso]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                </td>
+            </tr>
+        </table>
+        <div role="article" aria-roledescription="email" lang="en" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" data-bsi-dropzone="layout-3Pmmjt" data-bsi-dropzone-allowed-elements="layout-base-dziMWZ layout-colored-HloCP4">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div data-bsi-dropzone="footer-j91rgA" data-bsi-dropzone-allowed-elements="layout-dark-footer-x1LvCb layout-light-footer-lczK9u">
+            {% block footer %}
+                {% include '@bsi-cx/design-standard-library-email/content-elements/layout/layout-dark-footer/template.twig' %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
