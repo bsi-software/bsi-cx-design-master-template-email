@@ -15,56 +15,56 @@ module.exports = cx.design
       .withLabel('Header')
       .withContentElements(
         require('@bsi-cx/design-standard-library-email/content-elements/base/header-preheader'),
-        require('./content-elements/logo'),
-        require('./content-elements/header-img')),
+        require('./content-elements/base/logo'),
+        require('./content-elements/base/header-img')),
     cx.contentElementGroup
       .withGroupId('layout-NfWlMT')
       .withLabel('Layout')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/layout-base'),
-        require('./content-elements/layout-colored'),
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/col-one'),
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/col-two'),
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/col-two-ratio-1-2'),
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/col-two-ratio-2-1'),
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/col-three')),
+        require('./content-elements/layout/layout-base'),
+        require('./content-elements/layout/layout-colored'),
+        require('./content-elements/layout/col-one'),
+        require('./content-elements/layout/col-two'),
+        require('./content-elements/layout/col-two-ratio-1-2'),
+        require('./content-elements/layout/col-two-ratio-2-1'),
+        require('./content-elements/layout/col-three')),
     cx.contentElementGroup
       .withGroupId('spacing-divider-cEbF9P')
       .withLabel('Spacing & Divider')
       .withContentElements(
-        require('./content-elements/spacer-small'),
+        require('./content-elements/base/spacer-small'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/spacer'),
-        require('./content-elements/spacer-large'),
+        require('./content-elements/base/spacer-large'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/divider')),
     cx.contentElementGroup
       .withGroupId('headings-TbGwox')
       .withLabel('Headings & Text')
       .withContentElements(
         require('@bsi-cx/design-standard-library-email/content-elements/base/title-h1'),
-        require('./content-elements/title-h2'),
-        require('./content-elements/title-h3'),
+        require('./content-elements/base/title-h2'),
+        require('./content-elements/base/title-h3'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/text')),
     cx.contentElementGroup
       .withGroupId('images-hRO9mw')
       .withLabel('Images')
       .withContentElements(
         require('@bsi-cx/design-standard-library-email/content-elements/base/image'),
-        require('./content-elements/img-66'),
-        require('./content-elements/img-50'),
-        require('./content-elements/img-33'),
+        require('./content-elements/base/img-66'),
+        require('./content-elements/base/img-50'),
+        require('./content-elements/base/img-33'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/img-10')),
     cx.contentElementGroup
       .withGroupId('buttons-BadRb3')
       .withLabel('Buttons')
       .withContentElements(
         require('@bsi-cx/design-standard-library-email/content-elements/base/cta'),
-        require('./content-elements/cta-center'),
-        require('./content-elements/cta-right')),
+        require('./content-elements/base/cta-center'),
+        require('./content-elements/base/cta-right')),
     cx.contentElementGroup
       .withGroupId('special-content-5C921n')
       .withLabel('Special Content')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-email/content-elements/base/highlighted-content'),
+        require('./content-elements/base/highlighted-content'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/news-snippet'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/table'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/smiley-rating'),
@@ -73,9 +73,9 @@ module.exports = cx.design
       .withGroupId('footer-Ah9a9j')
       .withLabel('Footer')
       .withContentElements(
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/layout-dark-footer'),
-        require('./content-elements/layout-light-footer'),
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/col-one-footer'),
-        require('@bsi-cx/design-standard-library-email/content-elements/layout/col-two-footer'),
+        require('./content-elements/layout/layout-dark-footer'),
+        require('./content-elements/layout/layout-light-footer'),
+        require('./content-elements/layout/col-one-footer'),
+        require('./content-elements/layout/col-two-footer'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/footer-link'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/social-media-follow')));

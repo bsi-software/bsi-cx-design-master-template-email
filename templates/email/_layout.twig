@@ -50,12 +50,12 @@
                                         <tr>
                                             <td align="left" style="text-align: left;" data-bsi-dropzone="header-left-dz-4v3EEz" data-bsi-dropzone-allowed-elements="logo-TlgUGB text-Or4N33 cta-eoRgSU" data-bsi-dropzone-max-number-of-elements="1">
                                                 {% block headerLeft %}
-                                                    {% include './content-elements/logo/template.twig' %}
+                                                    {% include './content-elements/base/logo/template.twig' %}
                                                 {% endblock %}
                                             </td>
                                             <td align="right" style="text-align: right;" data-bsi-dropzone="header-right-dz-BnqL9s" data-bsi-dropzone-allowed-elements="text-Or4N33 cta-right-iVLOnT logo-TlgUGB" data-bsi-dropzone-max-number-of-elements="1">
                                                 {% block headerRight %}
-                                                    {% include './content-elements/cta-right/template.twig' %}
+                                                    {% include './content-elements/base/cta-right/template.twig' %}
                                                 {% endblock %}
                                             </td>
                                         </tr>
@@ -70,7 +70,7 @@
                             <tr>
                                 <td align="center" data-bsi-dropzone="header-img-dz-QT6wSZ" data-bsi-dropzone-allowed-elements="header-img-GTzJdB divider-LQi2yS" data-bsi-dropzone-max-number-of-elements="1">
                                     {% block headerImage %}
-                                        {% include './content-elements/header-img/template.twig' %}
+                                        {% include './content-elements/base/header-img/template.twig' %}
                                     {% endblock %}
                                 </td>
                             </tr>
@@ -90,7 +90,7 @@
         </div>
         <div data-bsi-dropzone="footer-j91rgA" data-bsi-dropzone-allowed-elements="layout-dark-footer-x1LvCb layout-light-footer-lczK9u">
             {% block footer %}
-                {% include '@bsi-cx/design-standard-library-email/content-elements/layout/layout-dark-footer/template.twig' %}
+                {% include './content-elements/layout/layout-dark-footer/template.twig' %}
             {% endblock %}
         </div>
     </body>
