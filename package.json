@@ -34,6 +34,6 @@
     "@bsi-cx/design-standard-library-email": "github:bsi-software/bsi-cx-design-standard-library-email#semver:1.0.0-rc.2"
   },
   "devDependencies": {
-    "@bsi-cx/design-build": "github:bsi-software/bsi-cx-design-build#semver:^1.0.0"
+    "@bsi-cx/design-build": "github:bsi-software/bsi-cx-design-build#semver:^1.9.6"
   }
 }
