@@ -1,13 +1,104 @@
 {% extends '_layout.twig' %}
 
+{% set colOneContentElements = ['base/title-h1', 'base/text', 'base/divider', 'base/table'] %}
+{% set colTwoContentElements = ['base/title-h1', 'base/text', 'base/cta'] %}
+{% set colThreeContentElements = ['base/title-h1', 'base/text', 'base/cta'] %}
+
 {% block content %}
 
-    {% embed './content-elements/layout/layout-base/template.twig' %}
+    {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/layout-base/prototype/library.twig' %}
         {% block layout_base_dropzone %}
+            {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-one/prototype/library.twig' %}
+                {% block col_one_dropzone %}
+                    {% for element in colOneContentElements %}
+                        {% include '@bsi-cx/design-standard-library-email/content-elements/' ~ element ~ '/template.twig' %}
+                    {% endfor %}
 
-            {% include './content-elements/layout/col-one/template.twig' %}
+                    {% include '@bsi-cx/design-standard-library-email/content-elements/base/spacer/template.twig' %}
+
+                {% endblock %}
+            {% endembed %}
+
+          {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-two/prototype/library.twig' %}
+                {% block col_two_dropzone_1 %}
+
+                    {% for element in colTwoContentElements %}
+                        {% include '@bsi-cx/design-standard-library-email/content-elements/' ~ element ~ '/template.twig' %}
+                    {% endfor %}
+
+                    {% include '@bsi-cx/design-standard-library-email/content-elements/base/spacer/template.twig' %}
+
+                {% endblock %}
+                {% block col_two_dropzone_2 %}
+
+                    {% for element in colTwoContentElements %}
+                        {% include '@bsi-cx/design-standard-library-email/content-elements/' ~ element ~ '/template.twig' %}
+                    {% endfor %}
+
+                    {% include '@bsi-cx/design-standard-library-email/content-elements/base/spacer/template.twig' %}
+
+                {% endblock %}
+            {% endembed %}
+
+            {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-three/prototype/library.twig' %}
+                {% block col_three_dropzone_1 %}
+
+                    {% for element in colThreeContentElements %}
+                        {% include '@bsi-cx/design-standard-library-email/content-elements/' ~ element ~ '/template.twig' %}
+                    {% endfor %}
+
+                    {% include '@bsi-cx/design-standard-library-email/content-elements/base/spacer/template.twig' %}
+
+                {% endblock %}
+                {% block col_three_dropzone_2 %}
+
+                    {% for element in colThreeContentElements %}
+                        {% include '@bsi-cx/design-standard-library-email/content-elements/' ~ element ~ '/template.twig' %}
+                    {% endfor %}
+
+                    {% include '@bsi-cx/design-standard-library-email/content-elements/base/spacer/template.twig' %}
+
+                {% endblock %}
+                {% block col_three_dropzone_3 %}
+
+                    {% for element in colThreeContentElements %}
+                        {% include '@bsi-cx/design-standard-library-email/content-elements/' ~ element ~ '/template.twig' %}
+                    {% endfor %}
+
+                    {% include '@bsi-cx/design-standard-library-email/content-elements/base/spacer/template.twig' %}
+
+                {% endblock %}
+            {% endembed %}
 
         {% endblock %}
     {% endembed %}
 
 {% endblock %}
+
+
+
+{# {% block content %}
+
+    {# {% include './content-elements/base/cta-center/template.twig' %} #}
+    {# {% include './content-elements/base/cta-right/template.twig' %} #}
+{# 
+    {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-one/prototype/library.twig' %}
+        {% block col_one_dropzone %}
+            {% include './content-elements/base/title-h2/template.twig' %}
+        {% endblock %}
+    {% endembed %}
+
+    {% embed './content-elements/layout/col-one/template.twig' %}
+        {% block col_one_dropzone %}
+            {% include './content-elements/base/title-h2/template.twig' %}
+        {% endblock %}
+    {% endembed %}
+
+
+    {% embed './content-elements/layout/layout-base/template.twig' %}
+        {% block layout_base_dropzone %}
+            {% include './content-elements/layout/col-one/template.twig' %}
+        {% endblock %}
+    {% endembed %}
+
+{% endblock %} #} 
