@@ -1,7 +1,9 @@
 {% apply spaceless %}
-
-    {% import '@bsi-cx/design-standard-library-email/content-elements/layout/layout-dark-footer/prototype/template.twig' as element %}
-
-    {{ element.render('layout-light-footer-lczK9u', 'layout-light-footer-dropzone-owgFvm', properties.footerLightBackgroundColor, properties.footerLightTextColor, properties.footerLightPadding, '') }}
-
+    {% include '@bsi-cx/design-standard-library-email/content-elements/layout/layout-dark-footer/prototype/library.twig' with {
+        elementId: 'layout-light-footer-lczK9u',
+        dropzoneId: 'layout-light-footer-dropzone-owgFvm',
+        backgroundColor: properties.footerLightBackgroundColor,
+        textColor: properties.footerLightTextColor,
+        padding: properties.footerLightPadding
+    } %}
 {% endapply %}
