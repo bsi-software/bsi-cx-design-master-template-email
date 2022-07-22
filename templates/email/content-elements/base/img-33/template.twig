@@ -1,7 +1,8 @@
 {% apply spaceless %}
-
-    {% import '@bsi-cx/design-standard-library-email/content-elements/base/image/prototype/template.twig' as element %}
-
-    {{ element.render('img-33-3NPzOS', 'img-33-part-image-gv8VXl', 'img-33-part-text-8Cfh88', '', '', '', '', '', properties.imageWidth33Percent) }}
-
+    {% include '@bsi-cx/design-standard-library-email/content-elements/base/image/prototype/template.twig' with {
+        elementId: 'img-33-3NPzOS',
+        imagePartId: 'img-33-part-image-gv8VXl',
+        textPartId: 'img-33-part-text-8Cfh88',
+        imageWidth: properties.imageWidth33Percent
+    } %}
 {% endapply %}

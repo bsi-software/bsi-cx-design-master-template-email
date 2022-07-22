@@ -1,7 +1,9 @@
 {% apply spaceless %}
-
-    {% import '@bsi-cx/design-standard-library-email/content-elements/base/title-h1/prototype/template.twig' as element %}
-
-    {{ element.render('title-h3-niJIWy', 'title-h3-part-9zKMpw', '', '', properties.fontSizeH3, properties.lineHeightH3, '', '', '3') }}
-
+    {% include '@bsi-cx/design-standard-library-email/content-elements/base/title-h1/prototype/template.twig' with {
+        elementId: 'title-h3-niJIWy',
+        titlePartId: 'title-h3-part-9zKMpw',
+        fontSize: properties.fontSizeH3,
+        lineHeight: properties.lineHeightH3,
+        titleType: '3'
+    } %}
 {% endapply %}
