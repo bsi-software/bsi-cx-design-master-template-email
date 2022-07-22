@@ -6,9 +6,9 @@
 
 {% block content %}
 
-    {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/layout-base/prototype/library.twig' %}
+    {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/layout-base/prototype/template.twig' %}
         {% block layout_base_dropzone %}
-            {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-one/prototype/library.twig' %}
+            {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-one/prototype/template.twig' %}
                 {% block col_one_dropzone %}
                     {% for element in colOneContentElements %}
                         {% include '@bsi-cx/design-standard-library-email/content-elements/' ~ element ~ '/template.twig' %}
@@ -19,7 +19,7 @@
                 {% endblock %}
             {% endembed %}
 
-          {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-two/prototype/library.twig' %}
+          {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-two/prototype/template.twig' %}
                 {% block col_two_dropzone_1 %}
 
                     {% for element in colTwoContentElements %}
@@ -40,7 +40,7 @@
                 {% endblock %}
             {% endembed %}
 
-            {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-three/prototype/library.twig' %}
+            {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-three/prototype/template.twig' %}
                 {% block col_three_dropzone_1 %}
 
                     {% for element in colThreeContentElements %}
@@ -74,31 +74,3 @@
     {% endembed %}
 
 {% endblock %}
-
-
-
-{# {% block content %}
-
-    {# {% include './content-elements/base/cta-center/template.twig' %} #}
-    {# {% include './content-elements/base/cta-right/template.twig' %} #}
-{# 
-    {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-one/prototype/library.twig' %}
-        {% block col_one_dropzone %}
-            {% include './content-elements/base/title-h2/template.twig' %}
-        {% endblock %}
-    {% endembed %}
-
-    {% embed './content-elements/layout/col-one/template.twig' %}
-        {% block col_one_dropzone %}
-            {% include './content-elements/base/title-h2/template.twig' %}
-        {% endblock %}
-    {% endembed %}
-
-
-    {% embed './content-elements/layout/layout-base/template.twig' %}
-        {% block layout_base_dropzone %}
-            {% include './content-elements/layout/col-one/template.twig' %}
-        {% endblock %}
-    {% endembed %}
-
-{% endblock %} #} 
