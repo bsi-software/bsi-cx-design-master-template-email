@@ -1,7 +1,8 @@
 {% apply spaceless %}
-
-    {% import '@bsi-cx/design-standard-library-email/content-elements/base/header-logo/prototype/template.twig' as element %}
-
-    {{ element.render('logo-TlgUGB', 'logo-part-ss4YMw', bsi_cx_asset('../../../static/logo.png'), 60) }}
-
+    {% include '@bsi-cx/design-standard-library-email/content-elements/base/header-logo/prototype/template.twig' with {
+        elementId: 'logo-TlgUGB',
+        imagePartId: 'logo-part-ss4YMw',
+        logoSrc: bsi_cx_asset('../../../static/logo.png'),
+        logoWidth: 60
+    } only %}
 {% endapply %}
