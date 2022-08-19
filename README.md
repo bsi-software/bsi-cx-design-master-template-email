@@ -57,6 +57,8 @@ The following issues on different email clients are known:
 * __Apple Mail 15 - macOS 12__: Dark Mode not working
 * __Gmail - Windows 10__: Dark Mode not working
 
+We would appreciate pull requests to resolve these issues.
+
 
 ## Emerging issues
 
