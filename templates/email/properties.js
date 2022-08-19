@@ -74,16 +74,17 @@ module.exports = {
   /*	                           Fonts	                           */
   /* ============================================================= */
 
+  // List for web safe CSS fonts: https://www.cssfontstack.com/
   // List for choosing fallback fonts: https://help.campaignmonitor.com/email-builder-font-compatibility
 
   // Elements using baseFontFamily: text, header date, pre-header, footer address, image caption
-  baseFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  baseFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif, Trebuchet MS',
 
   // Elements using titleFontFamily: heading 1, heading 2, heading 3
-  titleFontFamily: 'Calibri, Carlito, PT Sans, Trebuchet MS, sans‑serif',
+  titleFontFamily: 'Calibri, Carlito, PT Sans, Trebuchet MS, sans‑serif, Tahoma, Verdana, Trebuchet MS',
 
   // Elements using buttonFontFamily: CTA button left aligned, CTA button center aligned, CTA button right aligned
-  buttonFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif',
+  buttonFontFamily: 'Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans‑serif, Trebuchet MS',
 
 
   /* ============================================================= */
@@ -99,13 +100,13 @@ module.exports = {
   // Elements using colOneWidth: 1 column
   colOneWidth: 660,
   // Elements using colTwoWidth: 2 columns
-  colTwoWidth: 328,
+  colTwoWidth: 330,
   // Elements using colTwoSlimWidth: 2 columns ratio 1:2, 2 columns ratio 2:1
-  colTwoSlimWidth: 218,
+  colTwoSlimWidth: 220,
   // Elements using colTwoWideWidth: 2 columns ratio 1:2, 2 columns ratio 2:1
-  colTwoWideWidth: 438,
+  colTwoWideWidth: 440,
   // Elements using colThreeWidth: 3 columns
-  colThreeWidth: 218,
+  colThreeWidth: 220,
 
   // Width of footer columns in px
   // Elements using colOneFooterWidth: 1 footer column
@@ -217,14 +218,14 @@ module.exports = {
   /*	                          Layout  	                         */
   /* ============================================================= */
 
-  // Elements using buttonAlignmentLeft: CTA button left aligned
-  buttonAlignmentLeft: 'left',
+  // Elements using alignmentLeft: text, CTA button left aligned
+  alignmentLeft: 'left',
 
-  // Elements using buttonAlignmentCenter: CTA button center aligned
-  buttonAlignmentCenter: 'center',
+  // Elements using alignmentCenter: CTA button center aligned, layout light footer
+  alignmentCenter: 'center',
 
-  // Elements using buttonAlignmentRight: CTA button right aligned
-  buttonAlignmentRight: 'right',
+  // Elements using alignmentRight: CTA button right aligned
+  alignmentRight: 'right',
 
 
   /* ============================================================= */

@@ -3,10 +3,14 @@ const contentElement = require('@bsi-cx/design-standard-library-email/content-el
 module.exports = contentElement(
   require('./template.twig'),
   'img-50-TcxfeC',
-  'Image',
-  '50% width',
+  /*'Image',*/
+  'Bild',
+  /*'50% width',*/
+  '50% Breite',
   'img-50-part-image-hTFuUC',
-  'Image',
+  /*'Image',*/
+  'Bild',
   'img-50-part-text-egPKon',
-  'Caption'
+  /*'Caption'*/
+  'Bildunterschrift'
 );

@@ -3,5 +3,6 @@ const contentElement = require('@bsi-cx/design-standard-library-email/content-el
 module.exports = contentElement(
   require('./template.twig'),
   'spacer-large-deq83T',
-  'Spacing large'
+  /*'Spacing large'*/
+  'Abstand - gross'
 );

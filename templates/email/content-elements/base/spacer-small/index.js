@@ -3,5 +3,6 @@ const contentElement = require('@bsi-cx/design-standard-library-email/content-el
 module.exports = contentElement(
   require('./template.twig'),
   'spacer-small-8eA0T7',
-  'Spacing small'
+  /*'Spacing small'*/
+  'Abstand - klein'
 );

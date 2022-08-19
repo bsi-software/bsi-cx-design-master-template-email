@@ -2,10 +2,10 @@
 
 {% block content %}
 
-    {% embed './content-elements/layout/layout-base/template.twig' %}
+    {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/layout-base/prototype/template.twig' %}
         {% block layout_base_dropzone %}
 
-            {% include './content-elements/layout/col-one/template.twig' %}
+            {% include '@bsi-cx/design-standard-library-email/content-elements/layout/col-one/prototype/template.twig' %}
 
         {% endblock %}
     {% endembed %}

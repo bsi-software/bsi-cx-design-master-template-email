@@ -3,7 +3,9 @@ const contentElement = require('@bsi-cx/design-standard-library-email/content-el
 module.exports = contentElement(
   require('./template.twig'),
   'title-h3-niJIWy',
-  'Heading 3',
+  /*'Heading 3',*/
+  'Titel 3',
   'title-h3-part-9zKMpw',
-  'Heading 3'
+  /*'Heading 3'*/
+  'Titel 3'
 );

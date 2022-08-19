@@ -1,61 +1,48 @@
 const contentElements = [
-  require('@bsi-cx/design-standard-library-email/content-elements/base/title-h1'),
   require('./title-h2'),
   require('./title-h3'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/text'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/cta'),
   require('./cta-center'),
-  require('./cta-right'),
-  require('./highlighted-content'),
+  require('./cta-right')
+];
+
+const spacerElements = [
   require('./spacer-small'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/spacer'),
-  require('./spacer-large'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/divider')
+  require('./spacer-large')
 ];
 
 const colOneElements = [
   ...contentElements,
-  require('@bsi-cx/design-standard-library-email/content-elements/base/image'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/table'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/news-snippet'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/smiley-rating'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/event')
+  ...spacerElements
 ];
 
 const colTwoElements = [
   ...contentElements,
+  ...spacerElements,
   require('./img-50')
 ];
 
 const colTwoSlimElements = [
   ...contentElements,
+  ...spacerElements,
   require('./img-33')
 ];
 
 const colTwoWideElements = [
   ...contentElements,
+  ...spacerElements,
   require('./img-66')
 ];
 
 const colThreeElements = [
   ...contentElements,
+  ...spacerElements,
   require('./img-33')
 ];
 
-const footerElements = [
-  require('@bsi-cx/design-standard-library-email/content-elements/base/footer-link'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/social-media-follow'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/text'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/divider'),
-  require('./spacer-small'),
-  require('@bsi-cx/design-standard-library-email/content-elements/base/spacer'),
-  require('./spacer-large')
-];
-
 module.exports.contentElements = contentElements;
+module.exports.spacerElements = spacerElements;
 module.exports.colOneElements = colOneElements;
 module.exports.colTwoElements = colTwoElements;
 module.exports.colTwoSlimElements = colTwoSlimElements;
 module.exports.colTwoWideElements = colTwoWideElements;
 module.exports.colThreeElements = colThreeElements;
-module.exports.footerElements = footerElements;
