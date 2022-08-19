@@ -4,7 +4,7 @@ const {BuildConfig, WebpackConfigBuilder, Version, DesignType} = require('@bsi-c
 
 const emailBuildConfig = new BuildConfig()
   .withName('master-template-cx-22.0-email')
-  .withVersion('1.0.0-rc.2')
+  .withVersion('1.0.0')
   .withDesignType(DesignType.EMAIL)
   .withTargetVersion(Version.CX_22_0)
   .withRootPath(path.resolve(__dirname, 'templates', 'email'))

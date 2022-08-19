@@ -27,7 +27,7 @@
         </style>
     </head>
     <body style="margin: 0; padding: 0; word-spacing: normal;">
-        <table role="presentation" style="width: 100%; border: 0; border-spacing: 0; background-color: #ffffff;">
+        <table role="presentation" class="bsi-dm-bg-color" style="width: 100%; border: 0; border-spacing: 0; background-color: #ffffff;">
             <tr>
                 <td align="center">
                     <!--[if mso]>
@@ -46,7 +46,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <table style="width: 100%; border: 0; border-spacing: 0; margin-bottom: {{ properties.baseMarginBottom }}px;">
+                                    <table style="width: 100%; border: 0; border-spacing: 0;">
                                         <tr>
                                             <td align="left" style="text-align: left;" data-bsi-dropzone="header-left-dz-4v3EEz" data-bsi-dropzone-allowed-elements="logo-TlgUGB text-Or4N33 cta-eoRgSU" data-bsi-dropzone-max-number-of-elements="1">
                                                 {% block headerLeft %}
@@ -62,11 +62,6 @@
                                     </table>
                                 </td>
                             </tr>
-                            <!--[if mso]>
-                            <tr>
-                            <td height="{{ properties.baseMarginBottom }}" style="height: {{ properties.baseMarginBottom }}px;">&nbsp;</td>
-                            </tr>
-                            <![endif]-->
                             <tr>
                                 <td align="center" data-bsi-dropzone="header-img-dz-QT6wSZ" data-bsi-dropzone-allowed-elements="header-img-GTzJdB divider-LQi2yS" data-bsi-dropzone-max-number-of-elements="1">
                                     {% block headerImage %}
@@ -90,7 +85,8 @@
         </div>
         <div data-bsi-dropzone="footer-j91rgA" data-bsi-dropzone-allowed-elements="layout-dark-footer-x1LvCb layout-light-footer-lczK9u">
             {% block footer %}
-                {% include './content-elements/layout/layout-dark-footer/template.twig' %}
+                {% include '@bsi-cx/design-standard-library-email/content-elements/layout/layout-dark-footer/template.twig' %}
+                {% include './content-elements/layout/layout-light-footer/template.twig' %}
             {% endblock %}
         </div>
     </body>
