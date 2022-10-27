@@ -189,7 +189,7 @@ module.exports = {
   headerHeight: 320,
 
   // Elements using logoWidth: logo
-  logoWidth: 90,
+  logoWidth: 60,
 
   /* -------------------------- Others --------------------------- */
 
