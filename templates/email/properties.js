@@ -94,19 +94,24 @@ module.exports = {
   /* ----------------------- Layout width ------------------------ */
 
   // Width of e-mail layout in px
+  // IMPORTANT: MUST be a multiple of 12
+  // Reason: This ensures that two-columns and three-columns receive whole and even numbers, which are needed for correct display in Outlook.
   layoutWidth: 660,
 
   // Width of columns in px
   // Elements using colOneWidth: 1 column
   colOneWidth: 660,
   // Elements using colTwoWidth: 2 columns
-  colTwoWidth: 330,
+  colTwoWidth: 660 / 2,
   // Elements using colTwoSlimWidth: 2 columns ratio 1:2, 2 columns ratio 2:1
-  colTwoSlimWidth: 220,
+  colTwoSlimWidth: 660 / 3,
   // Elements using colTwoWideWidth: 2 columns ratio 1:2, 2 columns ratio 2:1
-  colTwoWideWidth: 440,
+  colTwoWideWidth: 660 / 3 * 2,
   // Elements using colThreeWidth: 3 columns
-  colThreeWidth: 220,
+  colThreeWidth: 660 / 3,
+
+  // Elements using headerWidth: header image
+  headerWidth: 660,
 
   // Width of footer columns in px
   // Elements using colOneFooterWidth: 1 footer column
@@ -175,15 +180,15 @@ module.exports = {
   // Width of images in px
 
   // Elements using imageWidth100Percent: image 100% width
-  imageWidth100Percent: 640,
+  imageWidth100Percent: 660,
   // Elements using imageWidth66Percent: image 66% width
-  imageWidth66Percent: 420,
+  imageWidth66Percent: 660 / 3 * 2,
   // Elements using imageWidth50Percent: image 50% width
-  imageWidth50Percent: 310,
+  imageWidth50Percent: 660 / 2,
   // Elements using imageWidth33Percent: image 33% width
-  imageWidth33Percent: 200,
+  imageWidth33Percent: 660 / 3,
   // Elements using imageWidth10Percent: image 10% width
-  imageWidth10Percent: 60,
+  imageWidth10Percent: 68,
 
   // Elements using headerHeight: header image
   headerHeight: 320,
