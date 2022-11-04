@@ -1,3 +1,4 @@
+{% set layoutWidth = properties.layoutWidth ?: 660 %}
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -31,29 +32,29 @@
             <tr>
                 <td align="center">
                     <!--[if mso]>
-                    <table role="presentation" align="center" style="width: 660px;">
+                    <table role="presentation" align="center" style="width: {{ layoutWidth }}px;">
                     <tr>
                     <td style="padding: 10px 0;">
                     <![endif]-->
-                    <div class="bsi-header" style="width: 96%; max-width: 660px; margin: 10px auto;">
+                    <div class="bsi-header" style="width: 96%; max-width: {{ layoutWidth }}px; margin: 10px auto;">
                         <table role="presentation" style="width: 100%; border: 0; border-spacing: 0;">
                             <tr>
-                                <td align="center" style="text-align: center;" data-bsi-dropzone="preheader-dz-fWSCej" data-bsi-dropzone-allowed-elements="header-preheader-cVwk8f logo-TlgUGB" data-bsi-dropzone-max-number-of-elements="2">
+                                <td align="center" style="padding: 0; margin: 0; text-align: center;" data-bsi-dropzone="preheader-dz-fWSCej" data-bsi-dropzone-allowed-elements="header-preheader-cVwk8f logo-TlgUGB" data-bsi-dropzone-max-number-of-elements="2">
                                     {% block preheader %}
                                         {% include '@bsi-cx/design-standard-library-email/content-elements/base/header-preheader/template.twig' %}
                                     {% endblock %}
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td style="padding: 0; margin: 0;">
                                     <table style="width: 100%; border: 0; border-spacing: 0;">
                                         <tr>
-                                            <td align="left" style="text-align: left;" data-bsi-dropzone="header-left-dz-4v3EEz" data-bsi-dropzone-allowed-elements="logo-TlgUGB text-Or4N33 cta-eoRgSU" data-bsi-dropzone-max-number-of-elements="1">
+                                            <td align="left" style="padding: 0; margin: 0; text-align: left;" data-bsi-dropzone="header-left-dz-4v3EEz" data-bsi-dropzone-allowed-elements="logo-TlgUGB text-Or4N33 cta-eoRgSU" data-bsi-dropzone-max-number-of-elements="1">
                                                 {% block headerLeft %}
                                                     {% include './content-elements/base/logo/template.twig' %}
                                                 {% endblock %}
                                             </td>
-                                            <td align="right" style="text-align: right;" data-bsi-dropzone="header-right-dz-BnqL9s" data-bsi-dropzone-allowed-elements="text-Or4N33 cta-right-iVLOnT logo-TlgUGB" data-bsi-dropzone-max-number-of-elements="1">
+                                            <td align="right" style="padding: 0; margin: 0; text-align: right;" data-bsi-dropzone="header-right-dz-BnqL9s" data-bsi-dropzone-allowed-elements="text-Or4N33 cta-right-iVLOnT logo-TlgUGB" data-bsi-dropzone-max-number-of-elements="1">
                                                 {% block headerRight %}
                                                     {% include './content-elements/base/cta-right/template.twig' %}
                                                 {% endblock %}
@@ -63,7 +64,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td align="center" data-bsi-dropzone="header-img-dz-QT6wSZ" data-bsi-dropzone-allowed-elements="header-img-GTzJdB divider-LQi2yS" data-bsi-dropzone-max-number-of-elements="1">
+                                <td align="center" style="padding: 0; margin: 0;" data-bsi-dropzone="header-img-dz-QT6wSZ" data-bsi-dropzone-allowed-elements="header-img-GTzJdB divider-LQi2yS" data-bsi-dropzone-max-number-of-elements="1">
                                     {% block headerImage %}
                                         {% include './content-elements/base/header-img/template.twig' %}
                                     {% endblock %}

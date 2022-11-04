@@ -49,13 +49,10 @@ npx webpack serve --config webpack.config.js --mode development --progress
 
 The following issues on different email clients are known:
 
-* __Outlook 2016 (120 dpi) - Windows 10__: Ghost line in footer two-column
-* __Outlook 2010 - Windows 10__: White bars in highlighted content element
-* __Pixel Gmail - Android 6__: Incorrect alignment of CTA button
+* __Outlook__: Various Ghost lines when zoom level inside email is not 100%
+* __Dark Mode__: Dark mode visualization differs between clients
 * __GMX - Windows 10__: Fonts are only displayed correctly if no fallback fonts are specified
 * __Web.de - Windows 10__: Fonts are only displayed correctly if no fallback fonts are specified
-* __Apple Mail 15 - macOS 12__: Dark Mode not working
-* __Gmail - Windows 10__: Dark Mode not working
 
 We would appreciate pull requests to resolve these issues.
 

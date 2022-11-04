@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.0.2] - 04.11.2022
+
+### Changed
+
+* Dependency updates
+* Outlook Layout improvements
+* Explanations for sizing properties
+
+[1.0.2]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.0.2
+
 ## [1.0.1] - 23.08.2022
 
 ### Changed
