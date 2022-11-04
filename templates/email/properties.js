@@ -180,15 +180,20 @@ module.exports = {
   // Width of images in px
 
   // Elements using imageWidth100Percent: image 100% width
-  imageWidth100Percent: 660,
+  // calculation: layoutWidth - 20
+  imageWidth100Percent: 640,
   // Elements using imageWidth66Percent: image 66% width
-  imageWidth66Percent: 660 / 3 * 2,
+  // calculation: layoutWidth = (imageWidth33Percent + 20) + (imageWidth66Percent + 20)
+  imageWidth66Percent: 420,
   // Elements using imageWidth50Percent: image 50% width
-  imageWidth50Percent: 660 / 2,
+  // calculation: layoutWidth = (imageWidth50Percent + 20) * 2
+  imageWidth50Percent: 310,
   // Elements using imageWidth33Percent: image 33% width
-  imageWidth33Percent: 660 / 3,
+  // calculation: layoutWidth = (imageWidth33Percent + 20) + (imageWidth66Percent + 20)
+  // calculation: layoutWidth = (imageWidth33Percent + 20) * 3
+  imageWidth33Percent: 200,
   // Elements using imageWidth10Percent: image 10% width
-  imageWidth10Percent: 68,
+  imageWidth10Percent: 60,
 
   // Elements using headerHeight: header image
   headerHeight: 320,
