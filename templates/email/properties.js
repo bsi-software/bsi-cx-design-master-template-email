@@ -239,6 +239,31 @@ module.exports = {
 
 
   /* ============================================================= */
+  /*	                   Social Media Follow                       */
+  /* ============================================================= */
+  // uncomment this section to customize the list of available Social Networks
+  // images must be relatvie to this file. We recommend to place them in the 'static' folder
+  // socialMediaFollow: [
+  //   {
+  //     name: 'Web',
+  //     img: css.url(__dirname, 'static', 'Website.png'),
+  //     url: 'https://www.example.com'
+  //   }, {
+  //     name: 'Mail',
+  //     img: css.url(__dirname, 'static', 'Mail.png'),
+  //     url: 'mailto:info@example.com'
+  //   }, {
+  //     name: 'LinkedIn',
+  //     img: css.url(__dirname, 'static', 'LinkedIn.png'),
+  //     url: 'https://www.linkedin.com/company/example'
+  //   }, {
+  //     name: 'Facebook',
+  //     img: css.url(__dirname, 'static', 'Facebook.png'),
+  //     url: 'https://www.facebook.com/example/'
+  //   },
+  // ]
+
+  /* ============================================================= */
   /*	                          Address	                           */
   /* ============================================================= */
 
