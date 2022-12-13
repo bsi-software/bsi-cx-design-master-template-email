@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.1.0] - 13.12.2022
+
+## Changed
+
+* Dependency updates
+* New properties added to support Library 1.1.0 features
+
+Pay attention to the following breaking changes:
+* CTA Button: We've added a new default implementation that is more robust among different clients. As a consequence, rounded corners in Outlook are no longer supported. If you intend to keep the previous implementation, set 'buttonLegacyVml: true' in the properties.js
+* Dark Footer Layout: the dark background color now spans over the entire width, which is the default use case for most brands.
+
+[1.1.0]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.1.0
+
 ## [1.0.2] - 04.11.2022
 
 ### Changed
@@ -24,7 +37,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 * Extend preview
 
 [1.0.1]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.0.1
-
 
 ## [1.0.0] - 19.08.2022
 
