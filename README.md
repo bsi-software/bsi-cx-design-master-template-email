@@ -24,8 +24,8 @@ To get more information on BSI CX designs, checkout our [online documentation](h
 
 To use this package you have to fulfill the following requirements:
 
-* [Node](https://nodejs.org/) >= 14.16.0
-* [NPM](https://nodejs.org/) >= 6.14.4
+* [Node](https://nodejs.org/) >= 16.16.0
+* [NPM](https://nodejs.org/) >= 8.11.0
 * A code editor e.g. [Visual Studio Code](https://code.visualstudio.com/), [IntelliJ](https://www.jetbrains.com/idea/)
   or [Web Storm](https://www.jetbrains.com/webstorm/)
 * To test your design, you need access to [BSI CX](https://www.bsi-software.com/cx)
@@ -49,7 +49,10 @@ npx webpack serve --config webpack.config.js --mode development --progress
 
 The following issues on different email clients are known:
 
-* __Outlook__: Various Ghost lines when zoom level inside email is not 100%
+* __Outlook on Windows__: 
+  * Various Ghost lines when zoom level inside email is not 100%
+  * Rounded corners on images and buttons not supported
+  * Button sizing and content alignment differs (less space on top/bottom, incorrect spacing/indent when text breaks to multiple lines)
 * __Dark Mode__: Dark mode visualization differs between clients
 * __GMX - Windows 10__: Fonts are only displayed correctly if no fallback fonts are specified
 * __Web.de - Windows 10__: Fonts are only displayed correctly if no fallback fonts are specified
