@@ -137,7 +137,7 @@ module.exports = {
   // Elements using footerBasePadding: footer layout base
   footerDarkPadding: 30,
   // Elements using footerLightPadding: footer layout light
-  footerLightPadding: 5,
+  footerLightPadding: 4,
   // Elements using footerLinkPaddingBottom: footer link
   footerLinkPaddingBottom: 10,
 
@@ -229,13 +229,13 @@ module.exports = {
   // Elements using spacerHeightSmall: spacing small
   spacerHeightSmall: 10,
   // Elements using spacerHeightMedium: spacing medium
-  spacerHeightMedium: 25,
+  spacerHeightMedium: 24,
   // Elements using spacerHeightLarge: spacing large
   spacerHeightLarge: 40,
 
   // Divider height in px
   // Elements using dividerHeight: divider
-  dividerHeight: 1,
+  dividerHeight: 2,
 
   // Height of social media icons in px
   // Elements using socialMediaIconHeight: social media follow
