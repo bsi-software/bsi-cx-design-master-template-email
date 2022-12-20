@@ -1,4 +1,5 @@
 {% set layoutWidth = properties.layoutWidth ?: 660 %}
+{% set visitedLinkColor = properties.visitedLinkColor ?: '#CCCCCC' %}
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -9,25 +10,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!--<![endif]-->
         <title></title>
-        <!--[if mso]>
-        <style type="text/css">
-            table {border-collapse:collapse;border:0;border-spacing:0;margin:0;}
-            div, td {padding:0;}
-            div {margin:0 !important;}
-        </style>
-        <noscript>
-            <xml>
-                <o:OfficeDocumentSettings>
-                    <o:PixelsPerInch>96</o:PixelsPerInch>
-                </o:OfficeDocumentSettings>
-            </xml>
-        </noscript>
+
+        {# Make background images in 72ppi Outlook render at correct size #}
+        <!--[if gte mso 9]>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:AllowPNG/>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
         <![endif]-->
+
+        {# Include all CSS from template and library #}
+        {# Make sure that the inlined CSS refers to ~@bsi-cx/design-standard-library-email/styles/styles.scss #}
+        {# Keep in mind that many inline styles are still necessary! #}
         <style>
             {{ bsi_cx_css_inline() }}
         </style>
     </head>
-    <body style="margin: 0; padding: 0; word-spacing: normal; mso-line-height-rule:exactly;">
+    <body vlink="{{visitedLinkColor}}" width="100%" style="margin: 0; padding: 0 !important; word-spacing: normal; mso-line-height-rule: exactly;">
         <table role="presentation" class="bsi-dm-bg-color" style="width: 100%; border: 0; border-spacing: 0; background-color: #ffffff;">
             <tr>
                 <td align="center">
