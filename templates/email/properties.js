@@ -112,6 +112,8 @@ module.exports = {
 
   // Elements using headerWidth: header image
   headerWidth: 660,
+  // Elements using headerHeight: header image
+  headerHeight: 320,
 
   // Width of footer columns in px
   // Elements using colOneFooterWidth: 1 footer column
@@ -135,7 +137,7 @@ module.exports = {
   // Elements using footerBasePadding: footer layout base
   footerDarkPadding: 30,
   // Elements using footerLightPadding: footer layout light
-  footerLightPadding: 5,
+  footerLightPadding: 4,
   // Elements using footerLinkPaddingBottom: footer link
   footerLinkPaddingBottom: 10,
 
@@ -152,6 +154,9 @@ module.exports = {
   fontSizeH2: 24,
   // Elements using fontSizeH3: heading 3
   fontSizeH3: 20,
+
+  // Elements using fontSizePreheader: Preheader
+  fontSizePreheader: 14,
 
   // Elements using fontSizeNewsTitle: news snippet
   fontSizeNewsTitle: 28,
@@ -195,29 +200,42 @@ module.exports = {
   // Elements using imageWidth10Percent: image 10% width
   imageWidth10Percent: 60,
 
-  // Elements using headerHeight: header image
-  headerHeight: 320,
+  // add rounded corners to images
+  // Please note: this does NOT work in Outlook on Windows!
+  // Elements using imageBorderRadius: header image, 
+  imageBorderRadius: 0,
 
+  // set the dimension of the header logo. Use either 'logoWidth' OR 'logoHeight', not both
   // Elements using logoWidth: logo
   logoWidth: 60,
+  //logoHeight: 50,
 
   /* -------------------------- Others --------------------------- */
 
   // Border radius in px
-  // Elements using buttonBorderRadius: CTA button left aligned, CTA button center aligned, CTA button right aligned
+  // Elements using the properties below: CTA button left aligned, CTA button center aligned, CTA button right aligned
   buttonBorderRadius: 5,
+  // font weight of the button text
+  buttonFontWeight: 'normal',
+  // font size of the button text
+  buttonFontSize: 14,
+  // padding of the button
+  buttonHorizontalPadding: 30,
+  buttonVerticalPadding: 10,
+  // if set to true, the button will span the entire width. When set to false, it will resize according to the text length
+  buttonFullWidth: false,
 
   // Height of spacing elements in px
   // Elements using spacerHeightSmall: spacing small
   spacerHeightSmall: 10,
   // Elements using spacerHeightMedium: spacing medium
-  spacerHeightMedium: 25,
+  spacerHeightMedium: 24,
   // Elements using spacerHeightLarge: spacing large
   spacerHeightLarge: 40,
 
   // Divider height in px
   // Elements using dividerHeight: divider
-  dividerHeight: 1,
+  dividerHeight: 2,
 
   // Height of social media icons in px
   // Elements using socialMediaIconHeight: social media follow
@@ -237,6 +255,31 @@ module.exports = {
   // Elements using alignmentRight: CTA button right aligned
   alignmentRight: 'right',
 
+
+  /* ============================================================= */
+  /*	                   Social Media Follow                       */
+  /* ============================================================= */
+  // uncomment this section to customize the list of available Social Networks
+  // images must be relatvie to this file. We recommend to place them in the 'static' folder
+  // socialMediaFollow: [
+  //   {
+  //     name: 'Web',
+  //     img: css.url(__dirname, 'static', 'Website.png'),
+  //     url: 'https://www.example.com'
+  //   }, {
+  //     name: 'Mail',
+  //     img: css.url(__dirname, 'static', 'Mail.png'),
+  //     url: 'mailto:info@example.com'
+  //   }, {
+  //     name: 'LinkedIn',
+  //     img: css.url(__dirname, 'static', 'LinkedIn.png'),
+  //     url: 'https://www.linkedin.com/company/example'
+  //   }, {
+  //     name: 'Facebook',
+  //     img: css.url(__dirname, 'static', 'Facebook.png'),
+  //     url: 'https://www.facebook.com/example/'
+  //   },
+  // ]
 
   /* ============================================================= */
   /*	                          Address	                           */
