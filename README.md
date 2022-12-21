@@ -47,18 +47,17 @@ npx webpack serve --config webpack.config.js --mode development --progress
 
 ## Known issues
 
-The following issues on different email clients are known:
+The following issues on different email clients are known, but cannot be solved easily due to technical limitations of these email cients.
 
 * __Outlook on Windows__: 
   * Various Ghost lines when zoom level inside email is not 100%
   * Rounded corners on images and buttons not supported
-  * Button sizing and content alignment differs (less space on top/bottom, incorrect spacing/indent when text breaks to multiple lines)
+  * Button is not fully clickable and incorrect spacing/indent when text breaks to multiple lines
 * __Dark Mode__: Dark mode visualization differs between clients
 * __GMX - Windows 10__: Fonts are only displayed correctly if no fallback fonts are specified
 * __Web.de - Windows 10__: Fonts are only displayed correctly if no fallback fonts are specified
 
-We would appreciate pull requests to resolve these issues.
-
+We would highly appreciate pull requests to resolve these issues if you are able to resolve one of them.
 
 ## Emerging issues
 
