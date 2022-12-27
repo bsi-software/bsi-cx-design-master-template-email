@@ -240,7 +240,9 @@ module.exports = {
   // Height of social media icons in px
   // Elements using socialMediaIconHeight: social media follow
   socialMediaIconHeight: 20,
-
+  
+  // font weight of news title
+  fontWeightNewsText: 'normal',
 
   /* ============================================================= */
   /*	                          Layout  	                         */
@@ -254,7 +256,6 @@ module.exports = {
 
   // Elements using alignmentRight: CTA button right aligned
   alignmentRight: 'right',
-
 
   /* ============================================================= */
   /*	                   Social Media Follow                       */
