@@ -45,8 +45,10 @@ To view the preview template locally, run the following command:
 npx webpack serve --config webpack.config.js --mode development --progress
 ````
 
-## Known issues
+## Supported Clients
+We do our best to support as much clients as possible. However, discontinued software versions and operating systems are not supported.
 
+## Known issues
 The following issues on different email clients are known, but cannot be solved easily due to technical limitations of these email cients.
 
 * __Outlook on Windows__: 
