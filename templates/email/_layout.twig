@@ -1,24 +1,35 @@
 {% set layoutWidth = properties.layoutWidth ?: 660 %}
 {% set visitedLinkColor = properties.visitedLinkColor ?: '#CCCCCC' %}
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        {# Help character display properly #}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        {# Set the initial scale of the email #}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {# Force Outlook clients to render with a better MS engine #}
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        {# Help prevent blue links and autolinking #}
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+        {# prevent Apple from reformatting and zooming messages #}
         <meta name="x-apple-disable-message-reformatting">
-        <!--[if !mso]><!-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!--<![endif]-->
+
+        {# target dark mode #}
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark only">
+
         <title></title>
 
-        {# Make background images in 72ppi Outlook render at correct size #}
-        <!--[if gte mso 9]>
-        <xml>
+        {# Allow for better image rendering on Windows hi-DPI displays #}
+        <!--[if gte mso 9]> 
+        <noscript>
+            <xml>
             <o:OfficeDocumentSettings>
                 <o:AllowPNG/>
                 <o:PixelsPerInch>96</o:PixelsPerInch>
             </o:OfficeDocumentSettings>
-        </xml>
+            </xml>
+        </noscript>
         <![endif]-->
 
         {# Include all CSS from template and library #}
