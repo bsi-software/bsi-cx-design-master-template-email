@@ -7,7 +7,6 @@
 {% set colThreeContentElements = ['base/img-33'] %}
 
 {% block content %}
-
     {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/layout-base/prototype/template.twig' %}
         {% block layout_base_dropzone %}
 
@@ -69,6 +68,14 @@
 
             {% include '@bsi-cx/design-standard-library-email/content-elements/base/spacer/template.twig' %}
 
+        {% endblock %}
+    {% endembed %}
+
+    {# TWIG does not allow to embed a block here #}
+    {% include './content-elements/layout/layout-colored/template.twig' %}
+
+    {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/layout-base/prototype/template.twig' %}
+        {% block layout_base_dropzone %}
             {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/col-three/prototype/template.twig' %}
                 {% block col_three_dropzone_1 %}
 

@@ -21,9 +21,11 @@ module.exports = {
   // A bright and neutral color should be chosen here, a discrete color matching the primary or secondary color can be generated here: https://mycolor.space/
   // Elements using layoutColoredBackgroundColor: layout with background color
   layoutColoredBackgroundColor: css.color('#f4f4f4'),
+  layoutColoredBackgroundColorDarkMode: css.color('#383e42'),
 
   // Elements using highlightedBackgroundColor: highlighted content
-  highlightBackgroundColor: css.color('#FFF1DE'),
+  highlightBackgroundColor: css.color('#efe3d4'),
+  highlightBackgroundColorDarkMode: css.color('#7c3d01'),
 
   // Elements using eventBackgroundColor: event
   eventBackgroundColor: css.color('#ff7d00'),

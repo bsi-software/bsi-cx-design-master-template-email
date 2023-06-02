@@ -5,6 +5,7 @@
   "scripts": {
     "build:dev": "webpack --config webpack.config.js --mode development --progress",
     "build:prod": "webpack --config webpack.config.js --mode production --progress",
+    "build:serve": "npx webpack serve --config webpack.config.js --mode development --progress",
     "watch": "webpack --config webpack.config.js --mode development --watch --progress"
   },
   "license": "MIT",

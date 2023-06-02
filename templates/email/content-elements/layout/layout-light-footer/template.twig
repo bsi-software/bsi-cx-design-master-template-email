@@ -4,13 +4,14 @@
         dropzoneId: 'layout-light-footer-dropzone-owgFvm',
         backgroundColor: properties.footerLightBackgroundColor,
         textColor: properties.footerLightTextColor,
-        padding: properties.footerLightPadding
+        padding: properties.footerLightPadding,
+        darkModeClass: 'bsi-dm-bg-color'
     } %}
         {% block layout_dark_footer_dropzone %}
             {% include '@bsi-cx/design-standard-library-email/content-elements/base/text/template.twig' with {
                 fontSize: 12,
                 textAlign: properties.alignmentCenter,
-                text: 'Copyright © 2022, Example Company'
+                text: 'Copyright ©, Example Company'
             } only %}
         {% endblock %}
     {% endembed %}
