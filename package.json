@@ -11,14 +11,6 @@
   "license": "MIT",
   "contributors": [
     {
-      "name": "Yann Büchler",
-      "url": "https://www.bsi-software.com/"
-    },
-    {
-      "name": "Oliver Fabel",
-      "url": "https://www.bsi-software.com/"
-    },
-    {
       "name": "Lukas Heyer",
       "url": "https://www.bsi-software.com/"
     },
@@ -29,7 +21,11 @@
     {
       "name": "Lukas Steiger",
       "url": "https://www.bsi-software.com/"
-    }
+    },
+    {
+      "name": "Benjamin Vier",
+      "url": "https://www.bsi-software.com/"
+    }    
   ],
   "dependencies": {
     "@bsi-cx/design-standard-library-email": "^1.1.2"
