@@ -1,6 +1,6 @@
 {
   "name": "@bsi-cx/design-master-template-email",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "BSI CX master template for emails",
   "scripts": {
     "build:dev": "webpack --config webpack.config.js --mode development --progress",
@@ -10,14 +10,6 @@
   },
   "license": "MIT",
   "contributors": [
-    {
-      "name": "Yann Büchler",
-      "url": "https://www.bsi-software.com/"
-    },
-    {
-      "name": "Oliver Fabel",
-      "url": "https://www.bsi-software.com/"
-    },
     {
       "name": "Lukas Heyer",
       "url": "https://www.bsi-software.com/"
@@ -29,10 +21,14 @@
     {
       "name": "Lukas Steiger",
       "url": "https://www.bsi-software.com/"
-    }
+    },
+    {
+      "name": "Benjamin Vier",
+      "url": "https://www.bsi-software.com/"
+    }    
   ],
   "dependencies": {
-    "@bsi-cx/design-standard-library-email":"^1.1.2"
+    "@bsi-cx/design-standard-library-email": "^1.1.2"
   },
   "devDependencies": {
     "@bsi-cx/design-build": "^1.0.0"
