@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.4] - 22.09.2023
+
+### Changes
+* Extension of overwriting properties: Pre-Header text and colored footer width
+* Dependency updates
+
+[1.1.4]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.1.4
+
 ## [1.1.3] - 05.06.2023
 
 ### Changed

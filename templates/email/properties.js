@@ -123,6 +123,13 @@ module.exports = {
   // Elements using colTwoFooterWidth: 2 footer columns
   colTwoFooterWidth: 300,
 
+  // Width of colored footer
+  // If set to "true", the colored background of the footer fills the entire width of the screen.
+  // If you want the colored background to be limited in width, set this to "false" and specify the width in pixels in the "footerBackgroundColorWidth" property below.
+  footerBackgroundColorFillsFullScreen: true,
+  // Uncomment and define, if "footerBackgroundColorFillsFullScreen" is false and the colored background should be limited in width.
+  // footerBackgroundColorWidth: 660,
+
   /* --------------------- Margin / Padding ---------------------- */
 
   // Margin bottom in px
@@ -157,8 +164,10 @@ module.exports = {
   // Elements using fontSizeH3: heading 3
   fontSizeH3: 20,
 
-  // Elements using fontSizePreheader: Preheader
-  fontSizePreheader: 14,
+  // Elements using fontSizePreHeader: Pre-Header
+  fontSizePreHeader: 14,
+  preHeaderInfoText: 'Pre-header text here. | ',
+  preHeaderLinkText: 'View in Browser',
 
   // Elements using fontSizeNewsTitle: news snippet
   fontSizeNewsTitle: 28,
