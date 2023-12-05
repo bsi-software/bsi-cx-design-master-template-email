@@ -12,9 +12,12 @@ const emailBuildConfig = new BuildConfig()
   .withPropertiesFilePath('properties.js');
 
 module.exports = WebpackConfigBuilder.fromConfigs(
-  emailBuildConfig.clone()
-    .withName('master-template-cx-22.0-email')
-    .withTargetVersion(Version.CX_22_0),
-  emailBuildConfig.clone()
-    .withName('master-template-cx-1.3-email')
-    .withTargetVersion(Version.CX_1_3));
+    emailBuildConfig.clone()
+        .withName('master-template-cx-1.3-email')
+        .withTargetVersion(Version.CX_1_3),
+    emailBuildConfig.clone()
+        .withName('master-template-cx-22.0-email')
+        .withTargetVersion(Version.CX_22_0),
+    emailBuildConfig.clone()
+        .withName('master-template-cx-23.2-email')
+        .withTargetVersion(Version.CX_23_2));
