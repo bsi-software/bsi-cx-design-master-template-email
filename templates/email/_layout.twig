@@ -92,14 +92,14 @@
                 </td>
             </tr>
         </table>
-        <div role="article" aria-roledescription="email" lang="en" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" data-bsi-dropzone="layout-3Pmmjt" data-bsi-dropzone-allowed-elements="layout-base-dziMWZ layout-colored-HloCP4">
+        <div role="article" aria-roledescription="email" lang="en" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;" data-bsi-dropzone="layout-3Pmmjt" data-bsi-dropzone-allowed-elements="layout-base-dziMWZ">
             {% block content %}
             {% endblock %}
         </div>
-        <div data-bsi-dropzone="footer-j91rgA" data-bsi-dropzone-allowed-elements="layout-dark-footer-x1LvCb layout-light-footer-lczK9u">
+        <div data-bsi-dropzone="footer-j91rgA" data-bsi-dropzone-allowed-elements="layout-dark-footer-x1LvCb">
             {% block footer %}
                 {% include '@bsi-cx/design-standard-library-email/content-elements/layout/layout-dark-footer/template.twig' %}
-                {% include './content-elements/layout/layout-light-footer/template.twig' %}
+                {# {% include './content-elements/layout/layout-light-footer/template.twig' %}#}
             {% endblock %}
         </div>
     </body>

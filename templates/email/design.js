@@ -34,7 +34,7 @@ module.exports = cx.design
             'layout-base-dropzone-7nPzXF',
             require('./content-elements/layout/col-two-ratio-1-2'),
             ...spacerElements),
-        require('./content-elements/layout/layout-colored'),
+        /*require('./content-elements/layout/layout-colored'),*/
         require('@bsi-cx/design-standard-library-email/content-elements/layout/col-one')
           .withExtendedDropzone(
             'col-one-dropzone-GYTnrx',
@@ -46,14 +46,14 @@ module.exports = cx.design
           .withExtendedDropzone(
             'col-two-dropzone-2-K1vkFU',
             ...colTwoElements),
-        require('./content-elements/layout/col-two-ratio-1-2'),
+        /*require('./content-elements/layout/col-two-ratio-1-2'),
         require('@bsi-cx/design-standard-library-email/content-elements/layout/col-two-ratio-2-1')
           .withExtendedDropzone(
             'col-two-ratio-2-1-dropzone-1-7xstGU',
             ...colTwoWideElements)
           .withExtendedDropzone(
             'col-two-ratio-2-1-dropzone-2-N4gT0V',
-            ...colTwoSlimElements),
+            ...colTwoSlimElements),*/
         require('@bsi-cx/design-standard-library-email/content-elements/layout/col-three')
           .withExtendedDropzone(
             'col-three-dropzone-1-mxExhj',
@@ -63,15 +63,17 @@ module.exports = cx.design
             ...colThreeElements)
           .withExtendedDropzone(
             'col-three-dropzone-3-ajc3B6',
-            ...colThreeElements)),
-    cx.contentElementGroup
+            ...colThreeElements),
+        require('@bsi-cx/design-standard-library-email/content-elements/base/spacer'),
+        require('@bsi-cx/design-standard-library-email/content-elements/base/divider')),
+    /*cx.contentElementGroup
       .withGroupId('spacing-divider-cEbF9P')
       .withLabel('Abstände & Trenner')
       .withContentElements(
         require('./content-elements/base/spacer-small'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/spacer'),
         require('./content-elements/base/spacer-large'),
-        require('@bsi-cx/design-standard-library-email/content-elements/base/divider')),
+        require('@bsi-cx/design-standard-library-email/content-elements/base/divider')),*/
     cx.contentElementGroup
       .withGroupId('headings-TbGwox')
       .withLabel('Titel & Text')
@@ -89,23 +91,23 @@ module.exports = cx.design
         require('./content-elements/base/img-50'),
         require('./content-elements/base/img-33'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/img-10')),
-    cx.contentElementGroup
+    /*cx.contentElementGroup
       .withGroupId('buttons-BadRb3')
       .withLabel('Buttons')
       .withContentElements(
         require('@bsi-cx/design-standard-library-email/content-elements/base/cta'),
         require('./content-elements/base/cta-center'),
-        require('./content-elements/base/cta-right')),
+        require('./content-elements/base/cta-right')),*/
     cx.contentElementGroup
       .withGroupId('special-content-5C921n')
-      .withLabel('Besonderer Inhalt')
+      .withLabel('Inhalt')
       .withContentElements(
+        require('@bsi-cx/design-standard-library-email/content-elements/base/cta'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/highlighted-content')
           .withExtendedDropzone(
             'highlighted-content-dropzone-4HtYBB',
             ...contentElements,
             ...spacerElements),
-        require('@bsi-cx/design-standard-library-email/content-elements/base/news-snippet'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/table'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/smiley-rating'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/event')),
@@ -117,7 +119,7 @@ module.exports = cx.design
           .withExtendedDropzone(
             'layout-dark-footer-dropzone-S2Twva',
             ...spacerElements),
-        require('./content-elements/layout/layout-light-footer'),
+        /*require('./content-elements/layout/layout-light-footer'),*/
         require('@bsi-cx/design-standard-library-email/content-elements/layout/col-one-footer')
           .withExtendedDropzone(
             'col-one-footer-dropzone-jaZSq2',
