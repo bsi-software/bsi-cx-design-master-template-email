@@ -253,6 +253,7 @@ module.exports = {
   socialMediaIconHeight: 20,
   
   // Alignment of social media icons
+  // Use one of the following alignment options: 'center', 'left', 'right'
   // Elements using socialMediaIconAlignment: social media follow
   socialMediaIconAlignment: 'center',
 
