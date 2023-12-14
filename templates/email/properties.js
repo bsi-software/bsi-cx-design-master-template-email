@@ -252,6 +252,10 @@ module.exports = {
   // Elements using socialMediaIconHeight: social media follow
   socialMediaIconHeight: 20,
   
+  // Alignment of social media icons
+  // Elements using socialMediaIconAlignment: social media follow
+  socialMediaIconAlignment: 'center',
+
   // font weight of news title
   fontWeightNewsText: 'normal',
 
