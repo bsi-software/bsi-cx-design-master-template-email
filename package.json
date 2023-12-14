@@ -1,6 +1,6 @@
 {
   "name": "@bsi-cx/design-master-template-email",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "BSI CX master template for emails",
   "scripts": {
     "build:dev": "webpack --config webpack.config.js --mode development --progress",
@@ -25,7 +25,7 @@
     {
       "name": "Benjamin Vier",
       "url": "https://www.bsi-software.com/"
-    }    
+    }
   ],
   "dependencies": {
     "@bsi-cx/design-standard-library-email": "^1.0.0"
