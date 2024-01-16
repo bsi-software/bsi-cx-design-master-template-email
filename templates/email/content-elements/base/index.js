@@ -2,7 +2,8 @@ const contentElements = [
   require('./title-h2'),
   require('./title-h3'),
   require('./cta-center'),
-  require('./cta-right')
+  require('./cta-right'),
+  require('./img-with-style')
 ];
 
 const spacerElements = [
