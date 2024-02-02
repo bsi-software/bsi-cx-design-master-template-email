@@ -299,6 +299,17 @@ module.exports = {
   // ]
 
   /* ============================================================= */
+  /*	                   Smiley Rating	                       */
+  /* ============================================================= */
+
+  // alt texts for smiley images
+  smileyRatingImage1Alt: 'Sehr gut',
+  smileyRatingImage2Alt: 'Gut',
+  smileyRatingImage3Alt: 'Befriedigend',
+  smileyRatingImage4Alt: 'Ausreichend',
+  smileyRatingImage5Alt: 'Mangelhaft',
+
+  /* ============================================================= */
   /*	                          Address	                           */
   /* ============================================================= */
 
