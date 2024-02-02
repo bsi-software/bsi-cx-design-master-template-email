@@ -62,10 +62,23 @@ module.exports = {
   // Elements using buttonBackgroundColor: CTA button left aligned, CTA button center aligned, CTA button right aligned
   buttonBackgroundColor: css.color('#16616d'),
 
-  /* -------------------------- Others --------------------------- */
+  /* -------------------------- Link Colors --------------------------- */
 
-  // Elements using preHeaderColor: linked text in pre-header
+  // Elements using linkColor: linked text in pre-header
   linkColor: css.color('#ff7d00'),
+
+  // Only available as of CX 23.2:
+  // Color of CX placeholder links, e.g. [Unsubscribe from newsletter|unsubscribe]
+  // Placeholder links within layout base
+  placeholderLinkColorLayoutBase: css.color('#16616d'),
+  // Placeholder links within layout colored
+  placeholderLinkColorLayoutColored: css.color('#ff7d00'),
+  // Placeholder links within footer dark
+  placeholderLinkColorFooterDark: css.color('#ffffff'),
+  // Placeholder links within footer light
+  placeholderLinkColorFooterLight: css.color('#383e42'),
+
+  /* -------------------------- Others --------------------------- */
 
   // Elements using dividerColor: divider
   dividerColor: css.color('#e6e6e6'),
