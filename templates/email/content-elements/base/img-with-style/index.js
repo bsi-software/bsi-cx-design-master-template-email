@@ -5,7 +5,7 @@ module.exports = contentElement(
   'img-with-style-wsFfey',
   /*'Image',*/
   'Bild',
-  '',
+  '33%, 50%, 66% oder 100% Breite',
   'img-with-style-part-image-Myqp3Q',
   /*'Image',*/
   'Bild',

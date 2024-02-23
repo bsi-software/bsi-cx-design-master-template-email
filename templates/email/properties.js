@@ -64,7 +64,7 @@ module.exports = {
 
   /* -------------------------- Link Colors --------------------------- */
 
-  // Elements using linkColor: linked text in pre-header
+  // Elements using linkColor: linked text in pre-header, fallback for unstyled links
   linkColor: css.color('#ff7d00'),
 
   // Only available as of CX 23.2:

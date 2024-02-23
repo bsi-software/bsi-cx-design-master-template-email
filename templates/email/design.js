@@ -108,11 +108,13 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-email/content-elements/base/cta'),
         require('./content-elements/base/cta-center').withArchivedMinVersion(Version.CX_23_2),
         require('./content-elements/base/cta-right').withArchivedMinVersion(Version.CX_23_2),
+        require('./content-elements/base/cta-full-width'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/highlighted-content')
           .withExtendedDropzone(
             'highlighted-content-dropzone-4HtYBB',
             ...contentElements,
             ...spacerElements),
+        require('@bsi-cx/design-standard-library-email/content-elements/base/news-snippet'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/table'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/smiley-rating'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/event')),

@@ -3,6 +3,7 @@ const contentElements = [
   require('./title-h3'),
   require('./cta-center'),
   require('./cta-right'),
+  require('./cta-full-width'),
   require('./img-with-style')
 ];
 
