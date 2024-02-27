@@ -1,88 +1,105 @@
 const {css} = require('@bsi-cx/design-build');
 
+/* ============================================================= */
+/*	                           Colors	                         */
+/* ============================================================= */
+
+/* ------------------------ Base Colors ------------------------ */
+
+const primaryColor = css.color('#16616d');
+const secondaryColor = css.color('#ff7d00');
+
+const lightColor = css.color('#ffffff');
+const darkColor = css.color('#000000');
+
+const lightGrey = css.color('#e6e6e6');
+const darkGrey = css.color('#383e42');
+
+const backgroundLight = css.color('#f4f4f4');
+const backgroundMedium = css.color('#efe3d4');
+const backgroundDark = css.color('#7c3d01');
+
 module.exports = {
 
-  /* ============================================================= */
-  /*	                           Colors	                           */
-  /* ============================================================= */
-
-  /* ------------------------ Base Colors ------------------------ */
-
-  primaryColor: css.color('#16616d'),
-  secondaryColor: css.color('#ff7d00'),
-  darkColor: css.color('#000000'),
-  lightColor: css.color('#ffffff'),
+  primaryColor,
+  secondaryColor,
+  lightColor,
+  darkColor,
+  lightGrey,
+  darkGrey,
+  backgroundLight,
+  backgroundMedium,
+  backgroundDark,
 
   /* --------------------- Background Colors --------------------- */
 
   // Elements using layoutBaseBackgroundColor: layout base
-  layoutBaseBackgroundColor: css.color('#ffffff'),
+  layoutBaseBackgroundColor: lightColor,
 
   // A bright and neutral color should be chosen here, a discrete color matching the primary or secondary color can be generated here: https://mycolor.space/
   // Elements using layoutColoredBackgroundColor: layout with background color
-  layoutColoredBackgroundColor: css.color('#f4f4f4'),
-  layoutColoredBackgroundColorDarkMode: css.color('#383e42'),
+  layoutColoredBackgroundColor: backgroundLight,
+  layoutColoredBackgroundColorDarkMode: darkGrey,
 
   // Elements using highlightedBackgroundColor: highlighted content
-  highlightBackgroundColor: css.color('#efe3d4'),
-  highlightBackgroundColorDarkMode: css.color('#7c3d01'),
+  highlightBackgroundColor: backgroundMedium,
+  highlightBackgroundColorDarkMode: backgroundDark,
 
   // Elements using eventBackgroundColor: event
-  eventBackgroundColor: css.color('#ff7d00'),
+  eventBackgroundColor: secondaryColor,
 
   // Elements using footerBackgroundColor: footer layout base
-  footerDarkBackgroundColor: css.color('#383e42'),
+  footerDarkBackgroundColor: darkGrey,
   // Elements using footerLightBackgroundColor: footer layout light
-  footerLightBackgroundColor: css.color('#ffffff'),
+  footerLightBackgroundColor: lightColor,
 
   /* ------------------------ Text Colors ------------------------ */
 
   // Elements using textColor: text, header date, image caption
-  baseTextColor: css.color('#000000'),
+  baseTextColor: darkColor,
 
   // Elements using titleColor: heading 1, heading 2, heading 3
-  titleTextColor: css.color('#16616d'),
+  titleTextColor: primaryColor,
 
   // Elements using eventTextColor: event
-  eventTextColor: css.color('#ffffff'),
+  eventTextColor: lightColor,
 
   // Elements using footerTextColor: footer address, 1 footer column, 2 footer column
-  footerDarkTextColor: css.color('#ffffff'),
+  footerDarkTextColor: lightColor,
   // Elements using footerLightTextColor: footer address, 1 footer column, 2 footer column
-  footerLightTextColor: css.color('#000000'),
+  footerLightTextColor: darkColor,
 
   /* ---------------------- Button Colors ------------------------ */
 
   // Elements using buttonTextColor: CTA button left aligned, CTA button center aligned, CTA button right aligned
-  buttonTextColor: css.color('#ffffff'),
+  buttonTextColor: lightColor,
 
   // Elements using buttonBorderColor: CTA button left aligned, CTA button center aligned, CTA button right aligned
-  buttonBorderColor: css.color('#16616d'),
+  buttonBorderColor: primaryColor,
 
   // Elements using buttonBackgroundColor: CTA button left aligned, CTA button center aligned, CTA button right aligned
-  buttonBackgroundColor: css.color('#16616d'),
+  buttonBackgroundColor: primaryColor,
 
   /* -------------------------- Link Colors --------------------------- */
 
   // Elements using linkColor: linked text in pre-header, fallback for unstyled links
-  linkColor: css.color('#ff7d00'),
+  linkColor: secondaryColor,
 
   // Only available as of CX 23.2:
   // Color of CX placeholder links, e.g. [Unsubscribe from newsletter|unsubscribe]
   // Placeholder links within layout base
-  placeholderLinkColorLayoutBase: css.color('#16616d'),
+  placeholderLinkColorLayoutBase: primaryColor,
   // Placeholder links within layout colored
-  placeholderLinkColorLayoutColored: css.color('#ff7d00'),
+  placeholderLinkColorLayoutColored: secondaryColor,
   // Placeholder links within footer dark
-  placeholderLinkColorFooterDark: css.color('#ffffff'),
+  placeholderLinkColorFooterDark: lightColor,
   // Placeholder links within footer light
-  placeholderLinkColorFooterLight: css.color('#383e42'),
+  placeholderLinkColorFooterLight: darkGrey,
 
   /* -------------------------- Others --------------------------- */
 
   // Elements using dividerColor: divider
-  dividerColor: css.color('#e6e6e6'),
-
+  dividerColor: lightGrey,
 
 
   /* ============================================================= */
@@ -128,7 +145,9 @@ module.exports = {
   // Elements using headerWidth: header image
   headerWidth: 660,
   // Elements using headerHeight: header image
-  headerHeight: 320,
+  // If set to 0, then the height will be set automatically based on the image properties.
+  // Attention: If a fixed height is defined (not 0), images that are uploaded with an incorrect aspect ratio will be deformed.
+  headerHeight: 0,
 
   // Width of footer columns in px
   // Elements using colOneFooterWidth: 1 footer column
@@ -145,21 +164,23 @@ module.exports = {
 
   /* --------------------- Margin / Padding ---------------------- */
 
-  // Margin bottom in px
+  // Margin bottom in px -> Spacing below elements
   // Elements using baseMarginBottom: images, cta (left, center, right), divider, event, header image, pre-header, highlighted content, news snippet, social media follow, table, text, titles
   baseMarginBottom: 12,
 
-  // Padding top, right, bottom and left in px
+  // Padding top, right, bottom and left in px -> Spacing around column elements
   // Elements using columnPadding: 1 column, 2 columns, 2 columns ratio 1:2, 2 columns ratio 2:1, 3 columns
   columnPadding: 10,
   // Elements using columnFooterPadding: 1 footer column, 2 footer columns
   columnFooterPadding: 10,
 
-  // Footer paddings in px
+  // Footer paddings in px -> (Colored) space above and below the footer content
   // Elements using footerBasePadding: footer layout base
   footerDarkPadding: 30,
   // Elements using footerLightPadding: footer layout light
   footerLightPadding: 4,
+
+  // Spacing below footer link element in px
   // Elements using footerLinkPaddingBottom: footer link
   footerLinkPaddingBottom: 10,
 
@@ -230,20 +251,20 @@ module.exports = {
   imageBorderRadius: 0,
 
   // set the dimension of the header logo. Use either 'logoWidth' OR 'logoHeight', not both
-  // Elements using logoWidth: logo
-  logoWidth: 60,
-  //logoHeight: 50,
+  // Elements using logoWidth and logoHeight: logo
+  // logoWidth: 60,
+  logoHeight: 60,
 
   /* -------------------------- Others --------------------------- */
 
-  // Border radius in px
+  // Border radius in px -> the greater the radius, the "rounder" the button becomes
   // Elements using the properties below: CTA button left aligned, CTA button center aligned, CTA button right aligned
   buttonBorderRadius: 5,
   // font weight of the button text
   buttonFontWeight: 'normal',
   // font size of the button text
   buttonFontSize: 14,
-  // padding of the button
+  // horizontal and vertical spacing between button text and button border -> defines the size of the button
   buttonHorizontalPadding: 30,
   buttonVerticalPadding: 10,
   // if set to true, the button will span the entire width. When set to false, it will resize according to the text length
@@ -315,7 +336,7 @@ module.exports = {
   /*	                   Smiley Rating	                       */
   /* ============================================================= */
 
-  // alt texts for smiley images
+  // alternative (alt) texts for smiley images (text which will be read aloud by screen readers)
   smileyRatingImage1Alt: 'Sehr gut',
   smileyRatingImage2Alt: 'Gut',
   smileyRatingImage3Alt: 'Befriedigend',
