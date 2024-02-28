@@ -5,11 +5,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 02.02.2024
+
+### New Features for templates with version CX 23.2:
+* Introduced new format for CX styles, which allows DOM manipulations
+* Replacement of similar elements by elements with CX styles
+* Archiving of elements that are no longer required due to CX styles
+* Add styling for CX placeholder/bracket links (e.g. [unsubscribe])
+
+### Other Changes
+* Improved accessibility:
+    * Keep alt attributes empty if only decorative images are included
+    * Smiley rating element: transfer alt texts to properties file
+* Social media follow element: replaced Twitter by X
+* Dependency updates
+
+[1.2.0]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.2.0
+
+
 ## [1.1.5] - 14.12.2023
 
 ### Changes
 * Extension of overwriting properties: Social follow alignment
 * Dependency updates
+
+[1.1.5]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.1.5
+
 
 ## [1.1.4] - 22.09.2023
 
