@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.2.0] - 02.02.2024
+## [1.2.0] - 28.02.2024
 
 ### New Features for templates with version CX 23.2:
 * Introduced new format for CX styles, which allows DOM manipulations
@@ -18,6 +18,11 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     * Keep alt attributes empty if only decorative images are included
     * Smiley rating element: transfer alt texts to properties file
 * Social media follow element: replaced Twitter by X
+* Add CTA button with full width
+* Add fallback styling for links inside formatted texts
+* Reset header height so that the header image is not distorted if uploaded with an incorrect aspect ratio
+* Set logo dimensions based on height instead of width
+* Update properties.js for better customisation
 * Dependency updates
 
 [1.2.0]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.2.0
