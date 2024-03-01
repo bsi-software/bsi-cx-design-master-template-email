@@ -314,6 +314,7 @@ module.exports = {
   /* ============================================================= */
   // uncomment this section to customize the list of available Social Networks
   // custom images must be relative to this file. We recommend to place them in the 'static' folder
+  // The path to the 'static' folder can be specified with the 'staticImgPath' constant. To do this, the constant 'const staticImgPath' must be uncommented above.
   // CAUTION: 
   // - adding new social elements would lead to uncaught errors while updating an existing design
   // - As of february 2024, we strongly recommend to only customize the list of social networks at the beginning of the project
