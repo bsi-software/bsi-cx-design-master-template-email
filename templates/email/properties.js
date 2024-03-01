@@ -19,6 +19,8 @@ const backgroundLight = css.color('#f4f4f4');
 const backgroundMedium = css.color('#efe3d4');
 const backgroundDark = css.color('#7c3d01');
 
+//const staticImgPath = '../../node_modules/@bsi-cx/design-standard-library-email/static';
+
 module.exports = {
 
   primaryColor,
@@ -311,25 +313,45 @@ module.exports = {
   /*	                   Social Media Follow                       */
   /* ============================================================= */
   // uncomment this section to customize the list of available Social Networks
-  // images must be relatvie to this file. We recommend to place them in the 'static' folder
-  // socialMediaFollow: [
-  //   {
-  //     name: 'Web',
-  //     img: css.url(__dirname, 'static', 'Website.png'),
-  //     url: 'https://www.example.com'
-  //   }, {
-  //     name: 'Mail',
-  //     img: css.url(__dirname, 'static', 'Mail.png'),
-  //     url: 'mailto:info@example.com'
-  //   }, {
+  // custom images must be relative to this file. We recommend to place them in the 'static' folder
+  // The path to the 'static' folder can be specified with the 'staticImgPath' constant. To do this, the constant 'const staticImgPath' must be uncommented above.
+  // CAUTION: 
+  // - adding new social elements would lead to uncaught errors while updating an existing design
+  // - As of february 2024, we strongly recommend to only customize the list of social networks at the beginning of the project
+  // - Refer to ticket #376364 to see whether this has been resolved in CX
+  // socialMediaFollow: [{
   //     name: 'LinkedIn',
-  //     img: css.url(__dirname, 'static', 'LinkedIn.png'),
-  //     url: 'https://www.linkedin.com/company/example'
+  //     img: css.url(__dirname, staticImgPath, 'linkedin.png'),
+  //     url: 'https://www.linkedin.com/'
+  //   }, {
+  //     name: 'X (Twitter)',
+  //     img: css.url(__dirname, staticImgPath, 'x-twitter.png'),
+  //     url: 'https://www.twitter.com/'
+  //   }, {
+  //     name: 'YouTube',
+  //     img: css.url(__dirname, staticImgPath, 'youtube.png'),
+  //     url: 'https://www.youtube.com/'
   //   }, {
   //     name: 'Facebook',
-  //     img: css.url(__dirname, 'static', 'Facebook.png'),
-  //     url: 'https://www.facebook.com/example/'
-  //   },
+  //     img: css.url(__dirname, staticImgPath, 'facebook.png'),
+  //     url: 'https://www.facebook.com/'
+  //   }, {
+  //     name: 'Instagram',
+  //     img: css.url(__dirname, staticImgPath, 'instagram.png'),
+  //     url: 'https://www.instagram.com/'
+  //   }, {
+  //     name: 'Pinterest',
+  //     img: css.url(__dirname, staticImgPath, 'pinterest.png'),
+  //     url: 'https://www.pinterest.com/'
+  //   }, {
+  //     name: 'Snapchat',
+  //     img: css.url(__dirname, staticImgPath, 'snapchat.png'),
+  //     url: 'https://www.snapchat.com/'
+  //   }, {
+  //     name: 'kununu',
+  //     img: css.url(__dirname, staticImgPath, 'kununu.png'),
+  //     url: 'https://www.kununu.com/'
+  //   }
   // ]
 
   /* ============================================================= */
