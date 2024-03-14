@@ -48,6 +48,26 @@ npx webpack serve --config webpack.config.js --mode development --progress
 ## Supported Clients
 We do our best to support as much clients as possible. However, discontinued software versions and operating systems are not supported.
 
+## Deprecated elements
+CX 23.2 introduced a new format for defining CX styles, which allows its use in e-mail templates (see [documentation](https://bsi-software.github.io/bsi-cx-docs/docs/23.2/design.html#styles)). As a result, styles have been added to content elements in the standard library. Content elements that exist in different variants (e.g. a button with different alignments) can now be replaced by a single content element with styles. Therefore, no longer required elements have been archived in this template for design from 23.2. Archived elements are still available in the design, but are no longer accessible in the content editor in the selection list of elements. This allows updating the design from 22.0 (or smaller) to 23.2 without losing these elements in an existing content.
+
+The following content elements are therefore deprecated and flagged with `.withArchivedMinVersion(Version.CX_23_2)` in the `design.js` file:
+
+* __Layout elements__: 
+  * layout-colored
+  * layout-light-footer
+  * col-two-ratio-1-2
+  * col-two-ratio-2-1
+* __Base elements__:
+  * spacer-small
+  * spacer-large
+  * image (replaced by img-with-style)
+  * img-66
+  * img-50
+  * img-33
+  * cta-center
+  * cta-right
+
 ## Known issues
 The following issues on different email clients are known, but cannot be solved easily due to technical limitations of these email cients.
 
