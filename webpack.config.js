@@ -9,7 +9,11 @@ const emailBuildConfig = new BuildConfig()
   .withDesignType(DesignType.EMAIL)
   .withTargetVersion(Version.CX_22_0)
   .withRootPath(path.resolve(__dirname, 'templates', 'email'))
-  .withPropertiesFilePath('properties.js');
+  .withPropertiesFilePath('properties.js')
+  .withAdditionalFilesToCopy({
+    from: path.resolve(__dirname, 'templates', 'email', 'static', 'header-image.png'),
+    to: 'static/header-image.png',
+  });
 
 module.exports = WebpackConfigBuilder.fromConfigs(
     emailBuildConfig.clone()

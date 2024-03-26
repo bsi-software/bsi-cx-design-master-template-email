@@ -15,6 +15,7 @@ module.exports = cx.design
   .withTitle('BSI CX Master Template - E-Mail')
   .withAuthor('Design Team - BSI Business Systems Integration AG')
   .withDate('22.08.2022')
+  .withPreviewImage('static/header-image.png')
   .withDefaultLocale(Locale.EN)
   .withLocales(Locale.EN)
   .withDropzones(
