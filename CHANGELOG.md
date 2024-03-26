@@ -8,6 +8,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Next
 - Better example for social network customization
+- Add preview image to the template
+
 
 ## [1.2.0] - 28.02.2024
 
