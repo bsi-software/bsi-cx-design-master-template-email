@@ -5,10 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-
 ## Next
+...
+
+
+## [1.2.1] - 19.07.2024
+
+### Fixes
 - Better example for social network customization
-- Add preview image to the template
+- Updated readme to explain which elements are deprecated
+- Add preview image to the template (#377586)
+- fix button cta border in full width mode (#383747)
+
+[1.2.1]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.2.1
 
 
 ## [1.2.0] - 28.02.2024
