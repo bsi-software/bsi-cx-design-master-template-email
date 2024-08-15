@@ -257,6 +257,10 @@ module.exports = {
   // logoWidth: 60,
   logoHeight: 60,
 
+  // set the orientation of the Logo
+  // allowed values: left, right
+  logoAlign: 'right',
+
   /* -------------------------- Others --------------------------- */
 
   // Border radius in px -> the greater the radius, the "rounder" the button becomes
