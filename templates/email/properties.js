@@ -259,7 +259,7 @@ module.exports = {
 
   // set the orientation of the Logo
   // allowed values: left, right
-  logoAlign: 'right',
+  logoAlign: 'left',
 
   /* -------------------------- Others --------------------------- */
 
