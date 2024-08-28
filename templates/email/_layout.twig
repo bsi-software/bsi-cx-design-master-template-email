@@ -1,5 +1,6 @@
 {% set layoutWidth = properties.layoutWidth ?: 660 %}
 {% set visitedLinkColor = properties.visitedLinkColor ?: '#CCCCCC' %}
+{% set headerLogoAlign = properties.logoAlign ?: 'left' %}
 <!DOCTYPE html>
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -63,11 +64,16 @@
                                         <tr>
                                             <td align="left" style="padding: 0; margin: 0; text-align: left;" data-bsi-dropzone="header-left-dz-4v3EEz" data-bsi-dropzone-allowed-elements="logo-TlgUGB text-Or4N33 cta-eoRgSU" data-bsi-dropzone-max-number-of-elements="1">
                                                 {% block headerLeft %}
-                                                    {% include './content-elements/base/logo/template.twig' %}
+                                                    {% if headerLogoAlign == 'left' %}
+                                                        {% include './content-elements/base/logo/template.twig' %}
+                                                    {% endif %}
                                                 {% endblock %}
                                             </td>
                                             <td align="right" style="padding: 0; margin: 0; text-align: right;" data-bsi-dropzone="header-right-dz-BnqL9s" data-bsi-dropzone-allowed-elements="text-Or4N33 cta-eoRgSU logo-TlgUGB" data-bsi-dropzone-max-number-of-elements="1">
                                                 {% block headerRight %}
+                                                    {% if headerLogoAlign == 'right' %}
+                                                        {% include './content-elements/base/logo/template.twig' %}
+                                                    {% endif %}
                                                 {% endblock %}
                                             </td>
                                         </tr>
