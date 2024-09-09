@@ -91,7 +91,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-email/content-elements/base/title-h1'),
         require('./content-elements/base/title-h2'),
         require('./content-elements/base/title-h3'),
-        require('@bsi-cx/design-standard-library-email/content-elements/base/text')),
+        require('@bsi-cx/design-standard-library-email/content-elements/base/text').editor('./configs/editor/formatted-text-editor.js')),
     cx.contentElementGroup
       .withGroupId('images-hRO9mw')
       .withLabel('Bilder')
