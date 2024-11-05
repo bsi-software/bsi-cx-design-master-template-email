@@ -9,24 +9,11 @@
     "watch": "webpack --config webpack.config.js --mode development --watch --progress"
   },
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Lukas Heyer",
-      "email": "lukas.heyer@bsi-software.com"
-    },
-    {
-      "name": "Keri Nogarth",
-      "email": "keri.nogarth@bsi-software.com"
-    },
-    {
-      "name": "Benjamin Vier",
-      "email": "benjamin.vier@bsi-software.com"
-    },
-    {
-      "name": "Sophia Wild",
-      "email": "sophia.wild@bsi-software.com"
-    }
-  ],
+  "author": {
+    "name": "Design Team BSI",
+    "email": "design@bsi-software.com",
+    "url": "https://bsi-software.github.io/bsi-cx-docs/"
+  },
   "dependencies": {
     "@bsi-cx/design-standard-library-email": "^1.2.1"
   },
