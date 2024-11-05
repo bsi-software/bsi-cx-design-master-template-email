@@ -12,19 +12,19 @@
   "contributors": [
     {
       "name": "Lukas Heyer",
-      "url": "https://www.bsi-software.com/"
+      "email": "lukas.heyer@bsi-software.com"
     },
     {
-      "name": "Marleen Jattke",
-      "url": "https://www.bsi-software.com/"
-    },
-    {
-      "name": "Lukas Steiger",
-      "url": "https://www.bsi-software.com/"
+      "name": "Keri Nogarth",
+      "email": "keri.nogarth@bsi-software.com"
     },
     {
       "name": "Benjamin Vier",
-      "url": "https://www.bsi-software.com/"
+      "email": "benjamin.vier@bsi-software.com"
+    },
+    {
+      "name": "Sophia Wild",
+      "email": "sophia.wild@bsi-software.com"
     }
   ],
   "dependencies": {
