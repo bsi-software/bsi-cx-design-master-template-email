@@ -6,9 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Next
+...
+
+
+## [1.2.2] - 06.12.2024
+
+### Fixes
 - Add nps survey element
 - Export text element with .editor() function where htmlEditorConfig can be customized
 - Update logo alignment
+
+[1.2.2]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.2.2
 
 
 ## [1.2.1] - 19.07.2024
