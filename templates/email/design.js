@@ -91,7 +91,7 @@ module.exports = cx.design
         require('@bsi-cx/design-standard-library-email/content-elements/base/title-h1'),
         require('./content-elements/base/title-h2'),
         require('./content-elements/base/title-h3'),
-        require('@bsi-cx/design-standard-library-email/content-elements/base/text').editor('./configs/editor/formatted-text-editor.js')),
+        require('@bsi-cx/design-standard-library-email/content-elements/base/text').editor(require('./configs/editor/formatted-text-editor.js'))),
     cx.contentElementGroup
       .withGroupId('images-hRO9mw')
       .withLabel('Bilder')
@@ -110,6 +110,7 @@ module.exports = cx.design
         require('./content-elements/base/cta-center').withArchivedMinVersion(Version.CX_23_2),
         require('./content-elements/base/cta-right').withArchivedMinVersion(Version.CX_23_2),
         require('./content-elements/base/cta-full-width'),
+        require('@bsi-cx/design-standard-library-email/content-elements/base/nps-survey'),
         require('@bsi-cx/design-standard-library-email/content-elements/base/highlighted-content')
           .withExtendedDropzone(
             'highlighted-content-dropzone-4HtYBB',
