@@ -1,5 +1,7 @@
 const {css} = require('@bsi-cx/design-build');
 
+const darkModeActive = false;
+
 /* ============================================================= */
 /*	                           Colors	                         */
 /* ============================================================= */
@@ -22,7 +24,7 @@ const backgroundDark = css.color('#7c3d01');
 //const staticImgPath = '../../node_modules/@bsi-cx/design-standard-library-email/static';
 
 module.exports = {
-
+  darkModeActive,
   primaryColor,
   secondaryColor,
   lightColor,
