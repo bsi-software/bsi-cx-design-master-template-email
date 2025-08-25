@@ -1,6 +1,5 @@
 const {css} = require('@bsi-cx/design-build');
 
-
 /* ============================================================= */
 /*	                           Colors	                         */
 /* ============================================================= */
@@ -39,7 +38,7 @@ module.exports = {
   // Property to control the use of standard dark-mode stylings
   // If set to true, the dark-mode stylings will be overridden by our stylings.
   // If set to false, no dark-mode stylings will be applied.
-  darkModeActive: true,
+  darkModeActive: false,
 
   // Non-specific dark-mode base colors
   darkModeBaseTextColor: lightColor,
