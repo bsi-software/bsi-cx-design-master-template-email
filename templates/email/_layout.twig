@@ -1,6 +1,8 @@
 {% set layoutWidth = properties.layoutWidth ?: 660 %}
 {% set visitedLinkColor = properties.visitedLinkColor ?: '#CCCCCC' %}
 {% set headerLogoAlign = properties.logoAlign ?: 'left' %}
+{% set darkModeClassBg = properties.darkModeActive ? 'bsi-dm-bg-color' : '' %}
+
 <!DOCTYPE html>
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -41,7 +43,7 @@
         </style>
     </head>
     <body vlink="{{visitedLinkColor}}" width="100%" style="margin: 0; padding: 0 !important; word-spacing: normal; mso-line-height-rule: exactly;">
-        <table role="presentation" class="bsi-dm-bg-color" style="width: 100%; border: 0; border-spacing: 0; background-color: #ffffff;">
+        <table role="presentation" class="{{darkModeClassBg}}" style="width: 100%; border: 0; border-spacing: 0; background-color: #ffffff;">
             <tr>
                 <td align="center">
                     <!--[if mso]>
