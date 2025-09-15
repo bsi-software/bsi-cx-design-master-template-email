@@ -22,7 +22,6 @@ const backgroundDark = css.color('#7c3d01');
 //const staticImgPath = '../../node_modules/@bsi-cx/design-standard-library-email/static';
 
 module.exports = {
-
   primaryColor,
   secondaryColor,
   lightColor,
@@ -32,24 +31,37 @@ module.exports = {
   backgroundLight,
   backgroundMedium,
   backgroundDark,
+  
+
+  /* --------------------- Dark Mode ------------------------ */
+
+  // Property to control the use of standard dark-mode stylings
+  // If set to true, the dark-mode stylings will be overridden by our stylings.
+  // If set to false, no dark-mode stylings will be applied.
+  darkModeActive: false,
+
+  // Non-specific dark-mode base colors
+  darkModeBaseTextColor: lightColor,
+  darkModeBaseBackgroundColor: darkColor,
+
 
   /* --------------------- Background Colors --------------------- */
-
+  
   // Elements using layoutBaseBackgroundColor: layout base
   layoutBaseBackgroundColor: lightColor,
-
+  
   // A bright and neutral color should be chosen here, a discrete color matching the primary or secondary color can be generated here: https://mycolor.space/
   // Elements using layoutColoredBackgroundColor: layout with background color
   layoutColoredBackgroundColor: backgroundLight,
   layoutColoredBackgroundColorDarkMode: darkGrey,
-
+  
   // Elements using highlightedBackgroundColor: highlighted content
   highlightBackgroundColor: backgroundMedium,
   highlightBackgroundColorDarkMode: backgroundDark,
-
+  
   // Elements using eventBackgroundColor: event
   eventBackgroundColor: secondaryColor,
-
+  
   // Elements using footerBackgroundColor: footer layout base
   footerDarkBackgroundColor: darkGrey,
   // Elements using footerLightBackgroundColor: footer layout light
