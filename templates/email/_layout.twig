@@ -46,6 +46,20 @@
             }
         </style>
         <![endif]-->
+        
+        <!--[if !mso]>
+            /* Fix webkit padding issue */
+            table {
+              border-spacing: 0 !important;
+              border-collapse: collapse !important;
+              table-layout: fixed !important;
+              margin: 0 auto;
+              padding: 0;
+              &.bsi-cta-wrapper {
+                border-collapse: separate !important;
+              }
+            }
+        <![endif]-->
     </head>
     <body vlink="{{visitedLinkColor}}" width="100%" style="margin: 0; padding: 0 !important; word-spacing: normal; mso-line-height-rule: exactly;">
         <table role="presentation" class="bsi-dm-bg-color" style="width: 100%; border: 0; border-spacing: 0; background-color: #ffffff;">
