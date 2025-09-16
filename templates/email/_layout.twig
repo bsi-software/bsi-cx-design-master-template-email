@@ -49,8 +49,9 @@
         </style>
         <![endif]-->
         
+        {# Fix webkit padding issue #}
         <!--[if !mso]>
-            /* Fix webkit padding issue */
+            <style>
             table {
               border-spacing: 0 !important;
               border-collapse: collapse !important;
@@ -61,6 +62,7 @@
                 border-collapse: separate !important;
               }
             }
+            </style>
         <![endif]-->
     </head>
     <body vlink="{{visitedLinkColor}}" width="100%" style="margin: 0; padding: 0 !important; word-spacing: normal; mso-line-height-rule: exactly;">
