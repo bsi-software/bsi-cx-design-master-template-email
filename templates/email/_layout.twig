@@ -2,6 +2,7 @@
 {% set visitedLinkColor = properties.visitedLinkColor ?: '#CCCCCC' %}
 {% set headerLogoAlign = properties.logoAlign ?: 'left' %}
 {% set darkModeClassBg = properties.darkModeActive ? 'bsi-dm-bg-color' : '' %}
+{% set supportedColorSchemes = properties.darkModeActive ? 'light dark' : 'light' %}
 
 <!DOCTYPE html>
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -18,8 +19,8 @@
         <meta name="x-apple-disable-message-reformatting">
 
         {# target dark mode #}
-        <meta name="color-scheme" content="light dark">
-        <meta name="supported-color-schemes" content="light dark only">
+        <meta name="color-scheme" content="{{supportedColorSchemes}}">
+        <meta name="supported-color-schemes" content="{{supportedColorSchemes}} only">
 
         <title></title>
 
