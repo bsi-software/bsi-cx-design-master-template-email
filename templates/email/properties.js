@@ -58,6 +58,14 @@ module.exports = {
   // Elements using highlightedBackgroundColor: highlighted content
   highlightBackgroundColor: backgroundMedium,
   highlightBackgroundColorDarkMode: backgroundDark,
+
+  // highlighted border:
+  // 'highlighted-border-none'
+  // 'highlighted-border-primaryColor'
+  // 'highlighted-border-secondaryColor'
+  // 'highlighted-border-lightColor'
+  // 'highlighted-border-darkColor'
+  highlightedBorder: 'highlighted-border-none',
   
   // Elements using eventBackgroundColor: event
   eventBackgroundColor: secondaryColor,
@@ -333,7 +341,7 @@ module.exports = {
   imageAlign: 'align-center',
 
   // Footer Layout
-  
+
   // Footer allignment
   // 'align-footer-left'
   // 'align-footer-center'
