@@ -190,7 +190,8 @@ module.exports = {
 
   // Footer paddings in px -> (Colored) space above and below the footer content
   // Elements using footerBasePadding: footer layout base
-  footerDarkPadding: 30,
+  footerDarkPaddingTopBottom: 30,
+  footerDarkPaddingLeftRight: 4,
   // Elements using footerLightPadding: footer layout light
   footerLightPadding: 4,
 
@@ -324,6 +325,30 @@ module.exports = {
 
   // Elements using alignmentRight: CTA button right aligned
   alignmentRight: 'right',
+
+  // Image
+  // 'align-left'
+  // 'align-center'
+  // 'align-right'
+  imageAlign: 'align-center',
+
+  // Footer Layout
+  
+  // Footer allignment
+  // 'align-footer-left'
+  // 'align-footer-center'
+  // 'align-footer-right'
+  footerAlign: 'align-footer-left',
+
+  // Footer vertical allignment
+  // 'vertical-align-footer-top'
+  // 'vertical-align-footer-middle'
+  // 'vertical-align-footer-bottom'
+  footerValign: 'vertical-align-footer-top',
+  
+  // Footer width in %
+  footerWidth: '96%',
+
 
   /* ============================================================= */
   /*	                   Social Media Follow                       */
