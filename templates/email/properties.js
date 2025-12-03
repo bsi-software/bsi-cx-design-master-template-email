@@ -59,7 +59,7 @@ module.exports = {
   highlightBackgroundColor: backgroundMedium,
   highlightBackgroundColorDarkMode: backgroundDark,
 
-  // highlighted border:
+  // Sets the border properties. Elements using highlightedBorder: highlighted content
   // 'highlighted-border-none'
   // 'highlighted-border-primaryColor'
   // 'highlighted-border-secondaryColor'
