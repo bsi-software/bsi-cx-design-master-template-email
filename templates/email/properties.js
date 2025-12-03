@@ -346,7 +346,7 @@ module.exports = {
   // 'align-footer-right'
   footerAlign: 'align-footer-left',
 
-  // Footer vertical allignment
+  // Sets the vertical footer alignment.
   // 'vertical-align-footer-top'
   // 'vertical-align-footer-middle'
   // 'vertical-align-footer-bottom'
