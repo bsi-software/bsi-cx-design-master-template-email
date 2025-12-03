@@ -340,7 +340,7 @@ module.exports = {
   // 'align-right'
   imageAlign: 'align-center',
 
-  // Sets the footer alignment
+  // Sets the footer alignment.
   // 'align-footer-left'
   // 'align-footer-center'
   // 'align-footer-right'
