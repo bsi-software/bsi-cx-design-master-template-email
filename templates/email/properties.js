@@ -334,7 +334,7 @@ module.exports = {
   // Elements using alignmentRight: CTA button right aligned
   alignmentRight: 'right',
 
-  // Image
+  // Sets the image alignment.
   // 'align-left'
   // 'align-center'
   // 'align-right'
