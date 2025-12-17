@@ -6,6 +6,7 @@ on:
     branches:                            # to delete
       - 'features/mima/pipeline-to-build-master-template'  # to delete before to merge in the main, it is used just for test 
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
