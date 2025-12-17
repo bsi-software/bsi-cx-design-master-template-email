@@ -341,10 +341,10 @@ module.exports = {
   imageAlign: 'align-center',
 
   // Sets the horizontal footer alignment.
-  // 'align-footer-left'
-  // 'align-footer-center'
-  // 'align-footer-right'
-  footerAlign: 'align-footer-left',
+  // 'left'
+  // 'center'
+  // 'right'
+  footerAlign: 'left',
 
   // Sets the vertical footer alignment.
   // 'vertical-align-footer-top'
