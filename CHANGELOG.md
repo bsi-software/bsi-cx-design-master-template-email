@@ -9,6 +9,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 * Add properties for padding and width of footer
 * Add properties for alignment of image 
 * Add properties for border of highlighted content
+* Add git pipeline to build master template
+* Add conditional color-scheme meta tags for Dark Mode support
+
 
 ## [1.2.4] - 16.09.2025
 * Update conditional style-tags to prevent client-specific padding issue
