@@ -7,6 +7,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Next
 * Add conditional color-scheme meta tags for Dark Mode support
+* Set npsStartWith0 to true
 
 
 ## [1.2.4] - 16.09.2025
