@@ -150,7 +150,7 @@ module.exports = {
   // Width of e-mail layout in px
   // IMPORTANT: MUST be a multiple of 12
   // Reason: This ensures that two-columns and three-columns receive whole and even numbers, which are needed for correct display in Outlook.
-  layoutWidth: 660,
+  layoutWidth: 708,
 
   // Width of columns in px
   // Elements using colOneWidth: 1 column
