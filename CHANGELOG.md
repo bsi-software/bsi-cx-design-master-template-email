@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Next
+* Add properties for padding and width of footer
+* Add properties for alignment of image 
+* Add properties for border of highlighted content
 
 
 
