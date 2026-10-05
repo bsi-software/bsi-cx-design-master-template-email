@@ -19,7 +19,45 @@ const backgroundLight = css.color('#f4f4f4');
 const backgroundMedium = css.color('#efe3d4');
 const backgroundDark = css.color('#7c3d01');
 
-//const staticImgPath = '../../node_modules/@bsi-cx/design-standard-library-email/static';
+/* --------------- Social Media Follow (see below) --------------- */
+// Defined once here, reused below both as individual 'followXxxURL/Hidden/Img' overrides and inside the full 'socialMediaFollow' override, to avoid duplicating the same values in two places.
+
+/* -------------------- Social Media URLs ---------------------- */
+// const followLinkedinURL = 'https://de.linkedin.com/';
+// const followXURL = 'https://www.twitter.com/';
+// const followYoutubeURL = 'https://www.youtube.com/';
+// const followFacebookURL = 'https://www.facebook.com/';
+// const followInstagramURL = 'https://www.instagram.com/';
+// const followPinterestURL = 'https://www.pinterest.com/';
+// const followSnapchatURL = 'https://www.snapchat.com/';
+// const followKununuURL = 'https://www.kununu.com/';
+
+/* ------------------------- Hide icons ------------------------- */
+// Set the following 'hidden' consts to true above, if you want the respective social media icons to be hidden.
+
+// const followLinkedinHidden = false;
+// const followXHidden = false;
+// const followYoutubeHidden = false;
+// const followFacebookHidden = false;
+// const followInstagramHidden = false;
+// const followPinterestHidden = false;
+// const followSnapchatHidden = false;
+// const followKununuHidden = false;
+
+/* ------------------------- Custom icons ------------------------- */
+// Note: 'followXxxImg' is only needed if you want to replace the bundled icon (e.g. with a differently colored/shaped variant). custom images must be relative to this file.
+// We recommend to place them in the 'static' folder. The path to the 'static' folder can be specified with the 'staticImgPath' constant, which must be uncommented below to use it.
+
+// const staticImgPath = '../../node_modules/@bsi-cx/design-standard-library-email/static';
+
+// const followLinkedinImg = css.url(__dirname, staticImgPath, 'linkedin.png');
+// const followXImg = css.url(__dirname, staticImgPath, 'x-twitter.png');
+// const followYoutubeImg = css.url(__dirname, staticImgPath, 'youtube.png');
+// const followFacebookImg = css.url(__dirname, staticImgPath, 'facebook.png');
+// const followInstagramImg = css.url(__dirname, staticImgPath, 'instagram.png');
+// const followPinterestImg = css.url(__dirname, staticImgPath, 'pinterest.png');
+// const followSnapchatImg = css.url(__dirname, staticImgPath, 'snapchat.png');
+// const followKununuImg = css.url(__dirname, staticImgPath, 'kununu.png');
 
 module.exports = {
   primaryColor,
@@ -31,7 +69,7 @@ module.exports = {
   backgroundLight,
   backgroundMedium,
   backgroundDark,
-  
+
 
   /* --------------------- Dark Mode ------------------------ */
 
@@ -46,22 +84,22 @@ module.exports = {
 
 
   /* --------------------- Background Colors --------------------- */
-  
+
   // Elements using layoutBaseBackgroundColor: layout base
   layoutBaseBackgroundColor: lightColor,
-  
+
   // A bright and neutral color should be chosen here, a discrete color matching the primary or secondary color can be generated here: https://mycolor.space/
   // Elements using layoutColoredBackgroundColor: layout with background color
   layoutColoredBackgroundColor: backgroundLight,
   layoutColoredBackgroundColorDarkMode: darkGrey,
-  
+
   // Elements using highlightedBackgroundColor: highlighted content
   highlightBackgroundColor: backgroundMedium,
   highlightBackgroundColorDarkMode: backgroundDark,
-  
+
   // Elements using eventBackgroundColor: event
   eventBackgroundColor: secondaryColor,
-  
+
   // Elements using footerBackgroundColor: footer layout base
   footerDarkBackgroundColor: darkGrey,
   // Elements using footerLightBackgroundColor: footer layout light
@@ -303,7 +341,7 @@ module.exports = {
   // Height of social media icons in px
   // Elements using socialMediaIconHeight: social media follow
   socialMediaIconHeight: 20,
-  
+
   // Alignment of social media icons
   // Use one of the following alignment options: 'center', 'left', 'right'
   // Elements using socialMediaIconAlignment: social media follow
@@ -328,47 +366,89 @@ module.exports = {
   /* ============================================================= */
   /*	                   Social Media Follow                       */
   /* ============================================================= */
-  // uncomment this section to customize the list of available Social Networks
-  // custom images must be relative to this file. We recommend to place them in the 'static' folder
+
+  /* -------------------- Social Media URLs ---------------------- */
+  // Uncomment together with the matching const of the same name above.
+  // followLinkedinURL,
+  // followXURL,
+  // followYoutubeURL,
+  // followFacebookURL,
+  // followInstagramURL,
+  // followPinterestURL,
+  // followSnapchatURL,
+  // followKununuURL,
+
+  /* ------------------------- Hide icons ------------------------- */
+  // Uncomment together with the matching const of the same name above.
+  // followLinkedinHidden,
+  // followXHidden,
+  // followYoutubeHidden,
+  // followFacebookHidden,
+  // followInstagramHidden,
+  // followPinterestHidden,
+  // followSnapchatHidden,
+  // followKununuHidden,
+
+  /* ------------------------- Custom icons ------------------------- */
+  // Uncomment together with the matching const of the same name above.
+  // followLinkedinImg,
+  // followXImg,
+  // followYoutubeImg,
+  // followFacebookImg,
+  // followInstagramImg,
+  // followPinterestImg,
+  // followSnapchatImg,
+  // followKununuImg,
+
+  // Uncomment this section to fully replace the list of available social networks (e.g. to use a different set of networks, or to reorder them).
+  // Reuses the same consts defined above, so a value only ever needs to change in one place. custom images must be relative to this file. We recommend to place them in the 'static' folder
   // The path to the 'static' folder can be specified with the 'staticImgPath' constant. To do this, the constant 'const staticImgPath' must be uncommented above.
-  // CAUTION: 
+  // CAUTION:
   // - adding new social elements would lead to uncaught errors while updating an existing design
   // - As of february 2024, we strongly recommend to only customize the list of social networks at the beginning of the project
   // - Refer to ticket #376364 to see whether this has been resolved in CX
   // socialMediaFollow: [{
   //     name: 'LinkedIn',
-  //     img: css.url(__dirname, staticImgPath, 'linkedin.png'),
-  //     url: 'https://www.linkedin.com/'
+  //     img: followLinkedinImg,
+  //     url: followLinkedinURL,
+  //     hidden: followLinkedinHidden
   //   }, {
   //     name: 'X (Twitter)',
-  //     img: css.url(__dirname, staticImgPath, 'x-twitter.png'),
-  //     url: 'https://www.twitter.com/'
+  //     img: followXImg,
+  //     url: followXURL,
+  //     hidden: followXHidden
   //   }, {
   //     name: 'YouTube',
-  //     img: css.url(__dirname, staticImgPath, 'youtube.png'),
-  //     url: 'https://www.youtube.com/'
+  //     img: followYoutubeImg,
+  //     url: followYoutubeURL,
+  //     hidden: followYoutubeHidden
   //   }, {
   //     name: 'Facebook',
-  //     img: css.url(__dirname, staticImgPath, 'facebook.png'),
-  //     url: 'https://www.facebook.com/'
+  //     img: followFacebookImg,
+  //     url: followFacebookURL,
+  //     hidden: followFacebookHidden
   //   }, {
   //     name: 'Instagram',
-  //     img: css.url(__dirname, staticImgPath, 'instagram.png'),
-  //     url: 'https://www.instagram.com/'
+  //     img: followInstagramImg,
+  //     url: followInstagramURL,
+  //     hidden: followInstagramHidden
   //   }, {
   //     name: 'Pinterest',
-  //     img: css.url(__dirname, staticImgPath, 'pinterest.png'),
-  //     url: 'https://www.pinterest.com/'
+  //     img: followPinterestImg,
+  //     url: followPinterestURL,
+  //     hidden: followPinterestHidden
   //   }, {
   //     name: 'Snapchat',
-  //     img: css.url(__dirname, staticImgPath, 'snapchat.png'),
-  //     url: 'https://www.snapchat.com/'
+  //     img: followSnapchatImg,
+  //     url: followSnapchatURL,
+  //     hidden: followSnapchatHidden
   //   }, {
   //     name: 'kununu',
-  //     img: css.url(__dirname, staticImgPath, 'kununu.png'),
-  //     url: 'https://www.kununu.com/'
+  //     img: followKununuImg,
+  //     url: followKununuURL,
+  //     hidden: followKununuHidden
   //   }
-  // ]
+  // ],
 
   /* ============================================================= */
   /*	                   Smiley Rating	                       */
