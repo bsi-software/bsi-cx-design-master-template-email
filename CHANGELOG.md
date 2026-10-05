@@ -7,6 +7,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Next
 
+* 468205: Update col-one dropzones to allow small images
 
 
 ## [1.2.5] - 08.04.2026
