@@ -8,6 +8,9 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## Next
 
 * 468205: Update col-one dropzones to allow small images
+* Add new content element group "Iterator" with the `product-iterator` and `iterator` elements from the standard library; both are allowed in the layout-base dropzone
+* Product-iterator: image prefill depends on the target version (`img-with-style` as of CX 23.2, `img-50` before), content dropzone allows the 2-column elements
+* Iterator: dropzone extended with col-two-ratio-1-2 and spacer elements
 
 
 ## [1.2.5] - 08.04.2026
