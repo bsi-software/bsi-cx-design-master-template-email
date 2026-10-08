@@ -393,4 +393,5 @@ module.exports = {
   addressWebText: 'www.example.com',
   addressWebURL: 'https://www.example.com/',
 
+  disableScssVariables: true,
 }
