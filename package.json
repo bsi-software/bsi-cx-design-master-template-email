@@ -18,7 +18,7 @@
     "@bsi-cx/design-standard-library-email": "1.2.6"
   },
   "devDependencies": {
-    "@bsi-cx/design-build": "^1.14.3",
+    "@bsi-cx/design-build": "^2.0.3",
     "less": "4.4.2"
   }
 }
