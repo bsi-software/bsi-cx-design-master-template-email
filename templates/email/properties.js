@@ -58,6 +58,14 @@ module.exports = {
   // Elements using highlightedBackgroundColor: highlighted content
   highlightBackgroundColor: backgroundMedium,
   highlightBackgroundColorDarkMode: backgroundDark,
+
+  // Sets the border properties. Elements using highlightedBorder: highlighted content
+  // 'highlighted-border-none'
+  // 'highlighted-border-primaryColor'
+  // 'highlighted-border-secondaryColor'
+  // 'highlighted-border-lightColor'
+  // 'highlighted-border-darkColor'
+  highlightedBorder: 'highlighted-border-none',
   
   // Elements using eventBackgroundColor: event
   eventBackgroundColor: secondaryColor,
@@ -190,7 +198,8 @@ module.exports = {
 
   // Footer paddings in px -> (Colored) space above and below the footer content
   // Elements using footerBasePadding: footer layout base
-  footerDarkPadding: 30,
+  footerDarkPaddingTopBottom: 30,
+  footerDarkPaddingLeftRight: 4,
   // Elements using footerLightPadding: footer layout light
   footerLightPadding: 4,
 
@@ -324,6 +333,28 @@ module.exports = {
 
   // Elements using alignmentRight: CTA button right aligned
   alignmentRight: 'right',
+
+  // Sets the image alignment.
+  // 'align-left'
+  // 'align-center'
+  // 'align-right'
+  imageAlign: 'align-center',
+
+  // Sets the horizontal footer alignment.
+  // 'left'
+  // 'center'
+  // 'right'
+  footerAlign: 'left',
+
+  // Sets the vertical footer alignment.
+  // 'vertical-align-footer-top'
+  // 'vertical-align-footer-middle'
+  // 'vertical-align-footer-bottom'
+  footerValign: 'vertical-align-footer-top',
+  
+  // Footer width in %
+  footerWidth: '96%',
+
 
   /* ============================================================= */
   /*	                   Social Media Follow                       */
