@@ -6,10 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Next
-* Get rid of "@import" warning
+
+
+## [1.2.6] - 19.10.2026
+
 * Update `properties.js`: document per-network social media overrides (`followXxxURL`/`followXxxHidden`/`followXxxImg`) introduced in `@bsi-cx/design-standard-library-email`, plus the matching `socialMediaFollow` legacy example
 * Set npsStartWith0 to true
 * 468205: Update col-one dropzones to allow small images
+* Get rid of "@import" warning
+
+[1.2.6]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.2.6
 
 
 ## [1.2.5] - 08.04.2026

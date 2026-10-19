@@ -77,6 +77,7 @@ module.exports = {
   // If set to true, the dark-mode stylings will be overridden by our stylings.
   // If set to false, no dark-mode stylings will be applied.
   darkModeActive: false,
+  disableScssVariables: true,
 
   // Non-specific dark-mode base colors
   darkModeBaseTextColor: lightColor,
