@@ -9,6 +9,8 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 * Update `properties.js`: document per-network social media overrides (`followXxxURL`/`followXxxHidden`/`followXxxImg`) introduced in `@bsi-cx/design-standard-library-email`, plus the matching `socialMediaFollow` legacy example
 * Set npsStartWith0 to true
 * 468205: Update col-one dropzones to allow small images
+* Add property to fix scss-Error with newer build version
+
 
 
 ## [1.2.5] - 08.04.2026
