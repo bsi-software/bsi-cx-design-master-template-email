@@ -115,6 +115,10 @@ module.exports = {
   // Elements using dividerColor: divider
   dividerColor: lightGrey,
 
+  /* ---------------------------- NPS -----------------------------*/
+  // Setting to determine whether the NPS form should start at 0 or 1
+  npsStartWith0: true,
+
 
   /* ============================================================= */
   /*	                           Fonts	                           */
