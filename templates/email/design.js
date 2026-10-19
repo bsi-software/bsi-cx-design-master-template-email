@@ -45,6 +45,8 @@ module.exports = cx.design
           .withExtendedDropzone(
             'layout-base-dropzone-7nPzXF',
             require('./content-elements/layout/col-two-ratio-1-2'),
+            require('./content-elements/layout/product-iterator'),
+            require('@bsi-cx/design-standard-library-email/content-elements/layout/iterator'),
             ...spacerElements),
         require('./content-elements/layout/layout-colored').withArchivedMinVersion(Version.CX_23_2),
         require('@bsi-cx/design-standard-library-email/content-elements/layout/col-one')
@@ -76,6 +78,23 @@ module.exports = cx.design
           .withExtendedDropzone(
             'col-three-dropzone-3-ajc3B6',
             ...colThreeElements)),
+    cx.contentElementGroup
+      .withGroupId('iterator-Mf5Ve')
+      .withLabel('Iterator')
+      .withContentElements(
+        require('./content-elements/layout/product-iterator')
+          .withExtendedDropzone(
+            'product-iterator-dropzone-image-L8wNcd',
+            require('./content-elements/base/img-with-style'),
+            require('./content-elements/base/img-50'))
+          .withExtendedDropzone(
+            'product-iterator-dropzone-content-T2pGfa',
+            ...colTwoElements),
+        require('@bsi-cx/design-standard-library-email/content-elements/layout/iterator')
+          .withExtendedDropzone(
+            'iterator-dropzone-Pk2mVe',
+            require('./content-elements/layout/col-two-ratio-1-2'),
+            ...spacerElements)),
     cx.contentElementGroup
       .withGroupId('spacing-divider-cEbF9P')
       .withLabel('Abstände & Trenner')
