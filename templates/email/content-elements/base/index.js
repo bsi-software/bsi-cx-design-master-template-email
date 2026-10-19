@@ -4,7 +4,10 @@ const contentElements = [
   require('./cta-center'),
   require('./cta-right'),
   require('./cta-full-width'),
-  require('./img-with-style')
+  require('./img-with-style'),
+  require('./img-66'),
+  require('./img-50'),
+  require('./img-33'),
 ];
 
 const spacerElements = [
