@@ -59,6 +59,15 @@ const backgroundDark = css.color('#7c3d01');
 // const followSnapchatImg = css.url(__dirname, staticImgPath, 'snapchat.png');
 // const followKununuImg = css.url(__dirname, staticImgPath, 'kununu.png');
 
+/*	                           Layout	                           */
+/* ============================================================= */
+// Width of e-mail layout in px
+// IMPORTANT: MUST be a multiple of 12
+// Reason: This ensures that two-columns and three-columns receive whole and even numbers, which are needed for correct display in Outlook.
+const layoutPadding = 36;
+const layoutWidth = 708 + layoutPadding;
+const columnWidth = 660 + layoutPadding;
+
 module.exports = {
   primaryColor,
   secondaryColor,
@@ -182,25 +191,26 @@ module.exports = {
 
   /* ----------------------- Layout width ------------------------ */
 
+  layoutPadding,
+  columnWidth,
   // Width of e-mail layout in px
   // IMPORTANT: MUST be a multiple of 12
   // Reason: This ensures that two-columns and three-columns receive whole and even numbers, which are needed for correct display in Outlook.
-  layoutWidth: 708,
-
+  layoutWidth,
   // Width of columns in px
   // Elements using colOneWidth: 1 column
-  colOneWidth: 660,
+  colOneWidth: columnWidth,
   // Elements using colTwoWidth: 2 columns
-  colTwoWidth: 660 / 2,
+  colTwoWidth: columnWidth / 2,
   // Elements using colTwoSlimWidth: 2 columns ratio 1:2, 2 columns ratio 2:1
-  colTwoSlimWidth: 660 / 3,
+  colTwoSlimWidth: columnWidth / 3,
   // Elements using colTwoWideWidth: 2 columns ratio 1:2, 2 columns ratio 2:1
-  colTwoWideWidth: 660 / 3 * 2,
+  colTwoWideWidth: columnWidth / 3 * 2 ,
   // Elements using colThreeWidth: 3 columns
-  colThreeWidth: 660 / 3,
+  colThreeWidth: columnWidth / 3,
 
   // Elements using headerWidth: header image
-  headerWidth: 660,
+  headerWidth: columnWidth,
   // Elements using headerHeight: header image
   // If set to 0, then the height will be set automatically based on the image properties.
   // Attention: If a fixed height is defined (not 0), images that are uploaded with an incorrect aspect ratio will be deformed.
