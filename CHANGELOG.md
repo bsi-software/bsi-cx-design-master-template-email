@@ -6,11 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Next
-
-* 468205: Update col-one dropzones to allow small images
+## [1.2.7] - 16.11.2026
 * Add new content element group "Iterator" with the `product-iterator` and `iterator` elements from the standard library; both are allowed in the layout-base dropzone
 * Product-iterator: image prefill depends on the target version (`img-with-style` as of CX 23.2, `img-50` before), content dropzone allows the 2-column elements
 * Iterator: dropzone extended with col-two-ratio-1-2 and spacer elements
+
+[1.2.7]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.2.7
+
+
+## [1.2.6] - 19.10.2026
+
+* Update `properties.js`: document per-network social media overrides (`followXxxURL`/`followXxxHidden`/`followXxxImg`) introduced in `@bsi-cx/design-standard-library-email`, plus the matching `socialMediaFollow` legacy example
+* Set npsStartWith0 to true
+* 468205: Update col-one dropzones to allow small images
+* Get rid of "@import" warning
+
+[1.2.6]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.2.6
 
 
 ## [1.2.5] - 08.04.2026
