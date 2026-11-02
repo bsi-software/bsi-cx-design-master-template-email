@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Next
+## [1.2.7] - 16.11.2026
+* TBD
+
+[1.2.7]: https://github.com/bsi-software/bsi-cx-design-master-template-email/releases/tag/1.2.7
 
 
 ## [1.2.6] - 19.10.2026
