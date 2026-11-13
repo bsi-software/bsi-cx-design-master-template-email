@@ -1,0 +1,11 @@
+{% apply spaceless %}
+    {% embed '@bsi-cx/design-standard-library-email/content-elements/layout/product-iterator/prototype/template.twig' %}
+        {% block product_iterator_dropzone_image %}
+            {% if cx.version.TARGET.compareTo(cx.version.CX_23_2) >= 0 %}
+                {% include '../../base/img-with-style/template.twig' %}
+            {% else %}
+                {% include '../../base/img-50/template.twig' %}
+            {% endif %}
+        {% endblock %}
+    {% endembed %}
+{% endapply %}
