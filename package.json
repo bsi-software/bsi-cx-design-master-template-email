@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@bsi-cx/design-build": "^1.14.3",
-    "less": "4.4.2"
+    "less": "4.9.1"
   }
 }
